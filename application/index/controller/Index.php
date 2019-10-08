@@ -14,12 +14,7 @@ class Index extends Controller{
 
     public function index(){
         /*
-        $user =model('Company'); 
-        $result = $user->getCompanyList();
-        dump($result) ;
-        $user =model('Members'); 
-        $result = $user ->test();
-        dump($result) ;
+        
         $a = new Item();
         echo $a->sayhello();
         echo "<h1>MilFunOs is  Working !</h1>";*/
