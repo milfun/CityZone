@@ -19,12 +19,13 @@ class Index extends Controller{
         dump($result) ;
         $user =model('Members'); 
         $result = $user ->test();
-        dump($result) ;*/
+        dump($result) ;
         $a = new Item();
         echo $a->sayhello();
+        echo "<h1>MilFunOs is  Working !</h1>";*/
         //var_dump($s) ;
-        //return $this->fetch('index');
-        echo "<h1>MilFunOs is  Working !</h1>";
+        return $this->fetch('index');
+        
     }
 
     public function get()

@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-09-23 15:31:17
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-08 13:53:04
+ * @Last Modified time: 2019-10-08 15:29:14
  */
 namespace app\index\model;
 
@@ -21,7 +21,7 @@ class Item extends Model
     ];  
 
     protected $update = ['audit'=>0]; 
-
+    
 	//自定义初始化
     protected function initialize()
     {
