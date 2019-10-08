@@ -1,0 +1,230 @@
+---------------------------------------------------------------
+[ 2019-10-08T10:07:58+08:00 ] 0.0.0.0 GET /mp/index.php
+[ info ] localhost/mp/index.php [运行时间：0.033835s][吞吐率：29.56req/s] [内存消耗：2,060.08kb] [文件加载：32]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\mp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site' => 'none',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9689078784; UM_distinctid=16d38b311fc3a1-0c78e54ec6bd2-5373e62-1fa400-16d38b311fe5b3; CNZZDATA5342091=cnzz_eid%3D731655640-1568611066-null%26ntime%3D1568611066',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\mp\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\mp\config/../public/view/index\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-08T10:08:39+08:00 ] 0.0.0.0 GET /mp/index.php/jobs/
+[ info ] localhost/mp/index.php/jobs/ [运行时间：0.050600s][吞吐率：19.76req/s] [内存消耗：3,828.87kb] [文件加载：41]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\mp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'jobs',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/mp/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9689078784; UM_distinctid=16d38b311fc3a1-0c78e54ec6bd2-5373e62-1fa400-16d38b311fe5b3; CNZZDATA5342091=cnzz_eid%3D731655640-1568611066-null%26ntime%3D1568611066',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->jobs[ D:\MilFun\Apache24\htdocs\mp\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\mp\config/../public/view/index\index\jobs.html [ array (
+  0 => 0,
+  1 => 1,
+  2 => 2,
+  3 => 3,
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008987s ] mysql:host=127.0.0.1;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_jobs` [ RunTime:0.009462s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_jobs` [ RunTime:0.001316s ]
+---------------------------------------------------------------
+[ 2019-10-08T10:08:40+08:00 ] 0.0.0.0 GET /mp/index.php/resumes/
+[ info ] localhost/mp/index.php/resumes/ [运行时间：0.035495s][吞吐率：28.17req/s] [内存消耗：3,892.49kb] [文件加载：41]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\mp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'resumes',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/mp/index.php/jobs/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9689078784; UM_distinctid=16d38b311fc3a1-0c78e54ec6bd2-5373e62-1fa400-16d38b311fe5b3; CNZZDATA5342091=cnzz_eid%3D731655640-1568611066-null%26ntime%3D1568611066',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->resumes[ D:\MilFun\Apache24\htdocs\mp\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\mp\config/../public/view/index\index\resume.html [ array (
+  0 => 0,
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000702s ] mysql:host=127.0.0.1;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_resume` [ RunTime:0.003751s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_resume` [ RunTime:0.000616s ]
+---------------------------------------------------------------
+[ 2019-10-08T10:08:41+08:00 ] 0.0.0.0 GET /mp/index.php/companys/
+[ info ] localhost/mp/index.php/companys/ [运行时间：0.032558s][吞吐率：30.71req/s] [内存消耗：3,833.64kb] [文件加载：41]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\mp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'companys',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/mp/index.php/resumes/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9689078784; UM_distinctid=16d38b311fc3a1-0c78e54ec6bd2-5373e62-1fa400-16d38b311fe5b3; CNZZDATA5342091=cnzz_eid%3D731655640-1568611066-null%26ntime%3D1568611066',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->companys[ D:\MilFun\Apache24\htdocs\mp\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\mp\config/../public/view/index\index\company.html [ array (
+  0 => 0,
+  1 => 1,
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000741s ] mysql:host=127.0.0.1;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_company` [ RunTime:0.002795s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_company` [ RunTime:0.001073s ]
+---------------------------------------------------------------
+[ 2019-10-08T10:08:45+08:00 ] 0.0.0.0 GET /mp/index.php/jobs/
+[ info ] localhost/mp/index.php/jobs/ [运行时间：0.034053s][吞吐率：29.37req/s] [内存消耗：3,828.76kb] [文件加载：41]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\mp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'jobs',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/mp/index.php/companys/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9689078784; UM_distinctid=16d38b311fc3a1-0c78e54ec6bd2-5373e62-1fa400-16d38b311fe5b3; CNZZDATA5342091=cnzz_eid%3D731655640-1568611066-null%26ntime%3D1568611066',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->jobs[ D:\MilFun\Apache24\htdocs\mp\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\mp\config/../public/view/index\index\jobs.html [ array (
+  0 => 0,
+  1 => 1,
+  2 => 2,
+  3 => 3,
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000619s ] mysql:host=127.0.0.1;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_jobs` [ RunTime:0.004555s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_jobs` [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2019-10-08T10:08:46+08:00 ] 0.0.0.0 GET /mp/index.php
+[ info ] localhost/mp/index.php [运行时间：0.017890s][吞吐率：55.90req/s] [内存消耗：2,060.52kb] [文件加载：32]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\mp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/mp/index.php/jobs/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9689078784; UM_distinctid=16d38b311fc3a1-0c78e54ec6bd2-5373e62-1fa400-16d38b311fe5b3; CNZZDATA5342091=cnzz_eid%3D731655640-1568611066-null%26ntime%3D1568611066',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\mp\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\mp\config/../public/view/index\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
