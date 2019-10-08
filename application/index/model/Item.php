@@ -4,13 +4,13 @@
  * @Author: MilFun
  * @Date:   2019-09-23 15:31:17
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-09-25 14:53:35
+ * @Last Modified time: 2019-10-08 13:53:04
  */
 namespace app\index\model;
 
 use think\Model;
 
-class Jobs extends Model
+class Item extends Model
 {
 	protected $auto = [];
     protected $insert = [
@@ -31,7 +31,7 @@ class Jobs extends Model
 
     }
 
-    public function getJobInfo($jid)
+    public function getItemInfo($jid)
     {
         $info = $this->get($jid);
         return $info->toJson();
@@ -40,7 +40,7 @@ class Jobs extends Model
     * 获取公司列表
     * @return array 返回类型
     */
-    public function getJobList()
+    public function getItemList()
     {
         $list = $this->all();
         foreach ($list as $k => $v) {
@@ -48,6 +48,15 @@ class Jobs extends Model
         }
         return $list;
     }
-
-
+    //获取器，添加日期转换
+    public function getTagAttr($value)
+    {
+        $res = explode('|', $value);
+        return $res[0];
+    }
+    //获取器，刷新时间转换
+    public function getRefreshtimeAttr($value)
+    {
+        return date('Y-m-d H:i:s',$value);
+    }
 }

@@ -10,38 +10,21 @@ class Index extends Controller{
         //echo 'init<br/>';
         //$this->success('新增成功', 'User/list');
         //$this->error('新增失败');
-        
     }
 
     public function index(){
         /*
-
-
         $user =model('Company'); 
         $result = $user->getCompanyList();
         dump($result) ;
-        
-        
         $user =model('Members'); 
         $result = $user ->test();
         dump($result) ;*/
-
-        /*
-		db('user')->data(['name'=>'tp','score'=>1000])->insert();
-		db('user')->where('id',1)->update(['name' => 'thinkphp']);
-		db('user')->where('id',1)->delete();
-		db('user')->page('2,10')->select(); 
-
-		db('think_user')->cache('key',60)->find();
-
-		where('create_time','<= time','2016-1-1');
-		
-		// 查询两个小时内的博客
-		whereTime('create_time','-2 hours')->select();
-		*/
-
+        $a = new Item();
+        echo $a->sayhello();
         //var_dump($s) ;
         //return $this->fetch('index');
+        echo "<h1>MilFunOs is  Working !</h1>";
     }
 
     public function get()
