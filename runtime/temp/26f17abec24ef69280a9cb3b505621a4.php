@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1570696417;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570692467;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570522036;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1570698859;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570692467;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570522036;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,12 +50,11 @@
 				<h2>Featured Video 灵感视频</h2>
 				<div class="left-bar">
 					
-					<div class="flex">
-						<div class="flex-item">1</div>
-						<div class="flex-item">1</div>
-						<div class="flex-item">1</div>
-						<div class="flex-item">1</div>
-					</div>
+					<ul class="flex">
+						
+						<li class="flex-item ">1</li>
+						<li class="flex-item">1</li>
+					</ul>
 
 				</div>
 				<!---->
@@ -67,6 +66,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 			
 		</div>
@@ -85,21 +85,48 @@
 					<li  class="flex-item">没法开工</li>
 				</ul>
 			</div>
+			<p class="more"><a href="" class="link-more">更多活动</a></p>
+		</div>
+		
+	</div>
+
+	<!---->
+	<div class="docker list">
+		<div class="inner">
+			<div class="load-more">
+
+				<a href="">浏览更多</a>
+			</div>
 			
 		</div>
 	</div>
 
 
 	<!---->
+	<div class="docker tips">
+		<div class="inner">
+			<div class="tips-left">
+				<p>抢先知晓全球最新鲜、最棒的创意商业资讯</p>
+				<p>扩充你的灵感库</p>
+			</div>
+			<div class="tips-right">
+				<a href="" class="btn wxload">使用微信登陆</a>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<!---->
 	<div class="docker footer">
 		<div class="inner">
-			<div>
-				<a href="">关于我们</a>
-				<a href="">广告服务</a>
-				<a href="">商户入驻</a>
-				<a href="">免责申明</a>
-			</div>
-			<p>  粤ICP备06047857号
+			<p class="foot-doc">
+				<a href="" class="foot-link">关于我们</a>
+				<a href="" class="foot-link">广告服务</a>
+				<a href="" class="foot-link">商户入驻</a>
+				<a href="" class="foot-link">免责申明</a>
+			</p>
+			<p  class="foot-info">  闽ICP备010000000号
 				<span>TOPYS.CN </span>
 				<span></span>
 				<span>2003-2019 ALL RIGHTS RESERVED.</span>
