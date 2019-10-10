@@ -2,7 +2,7 @@
 * @Author: MilFun
 * @Date:   2019-09-04 14:35:58
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-08 16:11:36
+* @Last Modified time: 2019-10-10 16:34:34
 */
 @charset "UTF-8";
 html, body, div, h1, h2, h3, h4, h5, h6, p, span, img, input, textarea, ul, ol, li, hr,form {margin: 0;padding: 0;    -webkit-text-size-adjust: none;}
@@ -29,7 +29,12 @@ input{
     padding: 1px 0px;
     border:none;
 }
-a{text-decoration:none;text-align: center;}
+a{text-decoration:none;text-align: center; }
+h2{
+    height: 50px;
+    line-height: 50px;
+    margin: 10px 0;
+}
 .line {display: inline-block;width: 1px;height: 12px;vertical-align: middle;background: #e0e0e0;margin: 0 10px;}
 .dot {display: inline-block;padding: 0 10px 0 7px;}
 .clear {clear: both;}
@@ -38,37 +43,136 @@ a{text-decoration:none;text-align: center;}
 .flex-item{-webkit-box-flex:1;-webkit-flex:1;flex:1;}
 
 /*********************************/
-.contain{
+.docker{
+    display: block;
 	width: 100%;
 	text-align: center;
+    background: #FFF;
+}
+.inner{
+    display: inline-block;
+    width: 1085px;
 }
 .header{
-	display: block;
-	width:100%;height:49px;background:#282828;
-	box-shadow: 0 1px 8px rgba(0,0,0,.06);
+    display: block;
+    width:100%;height:69px;background:#FFF;
+    box-shadow: 0 1px 8px rgba(0,0,0,.06);
     position: relative;
     z-index: 1005;}
-.nav{
-    font-size: 0;
+nav{
+    display: inline-block;
+    width: 100%;
+}
+.nav-item{
+    display: block;
     float: left;
-    margin-left: 15px;
-    height: 49px;
-    line-height: 49px;
+    width: 400px;
+}
+.nav-link{
+    display: inline-block;
+    margin-right: 20px;
+    height: 69px;
+    line-height: 69px;
+    color: #333;
+    border-bottom: 2px solid transparent;
+}
+.nav-logo{
+    display: inline-block;
+    float: center;
+
+    width: 285px;
+    margin-top: 10px;
+}
+.nav-info{
+    display: inline-block;
+    float: right;
+    height: 69px;
+    width: 400px;
+    line-height: 69px;
+    color:#333;
+    text-align: right;
+}
+.nav-info a{
+    margin-left: 10px;
+    color: #333;
 }
 .btn {
     display: inline-block;
     box-sizing: content-box;
-    height: 36px;
-    line-height: 36px;
-    border: 1px #5dd5c8 solid;
-    font-size: 16px;
-    color: #5dd5c8;
-    letter-spacing: 1px;
-    background: #5dd5c8;
+    line-height:  1.5;
+    border: 1px #333 solid;
+    padding: 5px;
     text-align: center;
     cursor: pointer;
     outline:none;
 }
+.login{
+    font-size: .875rem;
+}
+.btn:hover{
+    color: #FFF;
+    background: #333;
+}
+/******************/
+.main{
+    margin-top: 20px;
+}
+.list{
+    margin-top: 20px;
+}
+.content{
+    display: block;
+    text-align: center;
+}
+.swiper{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #edeeee;
+}
+.left-bar{
+    display: inline-block;
+    float: left;
+    width: 780px;
+
+}
+.right-bar{
+    display: inline-block;
+    float: right;
+    width: 285px;
+}
+.box{
+    display: block;
+    width: 100%;
+    border: 1px solid #edeeee;
+}
+.box h3{
+    font-size: 1rem;
+    color: #414a60;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: normal;
+    
+}
+
+.reg{
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .job-item p {
     height: 35px;
     line-height: 35px;
@@ -84,7 +188,7 @@ a{text-decoration:none;text-align: center;}
     position: relative;
 }
 
-#footer {
+.footer {
     background: #fff;
     padding: 20px 0 10px;
     margin-top: 43px;
