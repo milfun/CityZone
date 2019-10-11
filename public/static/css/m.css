@@ -2,7 +2,7 @@
 * @Author: MilFun
 * @Date:   2019-09-04 14:35:58
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-11 12:00:11
+* @Last Modified time: 2019-10-11 17:19:42
 */
 @charset "UTF-8";
 html, body, div, h1, h2, h3, h4, h5, h6, p, span, img, input, textarea, ul, ol, li, hr,form {margin: 0;padding: 0;    -webkit-text-size-adjust: none;}
@@ -87,6 +87,7 @@ h2{
     width:100%;height:69px;background:#FFF;
     box-shadow: 0 1px 8px rgba(0,0,0,.06);
     position: relative;
+    z-index: 1055;
     }
 nav{
     display: inline-block;
@@ -366,11 +367,11 @@ article p{
     width: 30px;
     text-align: right;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 .show-share{
     opacity: 1.0;
-    transition: all 1s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 .share-btn span{
     display: block;
@@ -386,13 +387,40 @@ article p{
 
 }
 .sb-like{background: url(../img/thank.png);
-background-size: 30px;}
-.sb-favo{background: url(../img/book2.png);
-background-size: 30px;}
-.sb-weibo{background: url(../img/hello.png);
-background-size: 30px;}
-.sb-wechat{background: url(../img/vip.png);
-background-size: 30px;}
+background-size: 30px;
+background-repeat: no-repeat;
+}
+.sb-zan{
+    display: block;
+    padding: 10px 0;
+    height:50px;
+    background: url(../img/zan.png);
+    background-size: 50px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.sb-favo{background: url(../img/favo.png);
+background-size: 30px;background-repeat: no-repeat;}
+.sb-weibo{background: url(../img/weibo.png);
+background-size: 30px;background-repeat: no-repeat;}
+.sb-wechat{background: url(../img/wechat.png);
+background-size: 30px;background-repeat: no-repeat;}
+.sb-totop{
+    background: url(../img/totop.png);
+background-size: 30px;background-repeat: no-repeat;
+}
+.sb-feed{
+    background: url(../img/feedback.png);
+background-size: 30px;background-repeat: no-repeat;
+}
+.sb-msg{
+    background: url(../img/msg.png);
+background-size: 30px;background-repeat: no-repeat;
+}
+.sb-phone{
+    background: url(../img/phone.png);
+background-size: 30px;background-repeat: no-repeat;
+}
 
 
 .article-content{
@@ -406,6 +434,7 @@ background-size: 30px;}
     float: left;
     width: 160px;
 }
+
 .article-info{
     display: inline-block;
     height: 80px;
@@ -447,6 +476,11 @@ background-size: 30px;}
 
     line-height: 20px;
 }
+.auth-name{}
+.auth-desc{
+    color: #999;
+    font-size: 14px;
+}
 .article-focus{
     display: inline-block;
     float: right;
@@ -479,7 +513,8 @@ background-size: 30px;}
     display: block;
     width: 100%;
     height: 100px;
-    border-bottom: 1px solid #a5a7aa;
+
+    border-bottom: 1px solid #edeeee;
     line-height: 100px;
     text-align: center;
     margin: 0 auto;
@@ -534,22 +569,29 @@ background-size: 30px;}
 .tips{
     display: block;
     position: fixed;
-    z-index: 9999;
+    z-index: 10;
+    right: 0px;
     bottom: 0px;
-    height: 80px;
+    width: 30px;
+    height: 100%;
+    padding: 0 5px;
     line-height: 30px;
-    background: rgba(0,0,0,0.8);
-    color: #FFF;
+    }
+.tips-btn{
+    position: absolute;
+    bottom: 10%;
+    color: #202020;
+    font-size: 12px;
+    text-align: center;
+    width: 30px;
+    
 }
-.tips-left{
-    display: inline-block;
-    float: left;
-    text-align: left;
-    margin-top: 10px;
-}
-.tips-right{
-    display: inline-block;
-    float: right;
+.tips-btn span{
+    display: block;
+    font-size: 0.6rem;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
 }
 .wxload{
     display: block;
@@ -562,4 +604,90 @@ background-size: 30px;}
 }
 .pick-list{
     height: 700px;
+}
+.code{
+    display: none;
+    position:absolute;
+    z-index: 2000;
+    bottom:  0px;
+    left: -160px;
+    width: 150px;
+    background: #FFF;
+    box-shadow: 0 1px 8px rgba(0,0,0,.06);
+}
+.qrcode{
+    width: 80%;
+}
+/****************/
+.sign{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5dd5c8 url(../img/newbg.png) center bottom no-repeat;
+    text-align: center;
+    
+
+}
+.sign-head{
+    display: inline-block;
+    text-align: right;
+    height: 100px;
+    width: 100%;
+    line-height: 50px;
+    color: #FFF;
+}
+.sign-cont{
+    position: absolute;
+    width: 760px;
+    min-height: 514px;
+    top: 50%;
+    left: 50%;
+    margin: -257px 0 0 -380px;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 1px 8px rgba(0,0,0,.06);
+}
+.sign-box{
+    display: block;
+    min-height: 514px;
+
+}
+.sign-left{
+    display: inline-block;
+    float: left;
+    width:240px; 
+    min-height: 514px;
+    background: #f8fcff;
+    border-bottom: 1px solid #edeeee;
+    border-radius: 20px;
+}
+.sign-right{
+    display: inline-block;
+    float: right;
+    width: 520px;
+    min-height: 514px;
+    border-bottom: 1px solid #edeeee;
+}
+.sign-left .logo {
+    float: none;
+    display: block;
+    width: auto;
+    height: 40px;
+    margin: 88px 0 0 40px;
+    padding: 0;
+}
+.sign-left .logo img {
+    width: 42px;
+    height: 42px;
+}
+.sign-left .logo div {
+    float: right;
+    position: relative;
+    bottom: -1px;
+    right: 65px;
+}
+.sign-left.logo  div p {
+    color: #00c2b3;
+    line-height: 20px;
 }

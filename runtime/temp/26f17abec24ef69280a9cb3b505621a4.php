@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1570759907;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570764590;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570764544;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1570783404;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570783365;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1570783367;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570783355;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570783354;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +8,12 @@
 <meta http-equiv="pragma" content="no-cache"> 
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
 <link rel="stylesheet" type="text/css" href="http://localhost/cityzone/public/static/css/m.css" />
-<title>MilFun System</title>
+<title>怪兽研习社</title>
 </head>
 <body>
 <!---->
-	<div class="docker header">
+	
+<div class="docker header">
 		<div class="inner">
 			<!---->
 			<nav >
@@ -30,15 +31,14 @@
 				</div>
 				<!---->
 				<div class="nav-info">
-					<a href="">查找<i></i></a>
-					<a href="">手机<i></i></a>
-					<a href="" class="btn login">注册/登陆</a>
+					
+					<a href="http://localhost/cityzone/index.php/Index/index/login.html" class="btn login">注册/登陆</a>
 				</div>
+				
 		</nav>
 		</div>
 		
-	</div>
-	
+	</div>	
 
 	<!---->
 	<div class="docker main">
@@ -329,19 +329,25 @@
 		</div>
 	</div>-->
 
-
+	<!---->
 	
-<!---->
 
-	<div class="docker tips">
+<div class="docker tips">
 		<div class="inner">
-			<div class="tips-left">
-				<p>抢先知晓全球最新鲜、最棒的创意商业资讯</p>
-				<p>扩充你的灵感库</p>
+			<!---->
+			<div class="tips-btn">
+				<span title="喜欢"><i class="sbtn sb-totop"></i>置顶</span>
+				<span title="收藏"><i class="sbtn sb-feed "></i>反馈</span>
+				<span title="微博"><i class="sbtn sb-msg"></i>聊天</span>
+				<span title="微信"><i class="sbtn sb-phone "></i>电话
+					<div class="code">
+						<img src="http://localhost/cityzone/public/static/img/qrcode.jpg" class="qrcode">
+						<p>扫码关注微信公众号</p>
+						<p>随时随地 灵感一下</p>
+					</div>
+				</span>
 			</div>
-			<div class="tips-right">
-				<a href="" class="btn wxload">使用微信登陆</a>
-			</div>
+			
 
 			
 		</div>
@@ -367,14 +373,30 @@
 	</div>
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	<script type="text/javascript">
-		var top=$(".header").offset().top;
+		var dist 
 		$(window).scroll(function () {
-		  if ($(window).scrollTop() >= 150) {
-		    $(".header");
+		  if ($(window).scrollTop() >= 50) {
+		    $(".share-btn").addClass("show-share");
 		  } else {
-		     $(".header").removeClass("top");
+		     $(".share-btn").removeClass("show-share");
+		  }
+		  
+		  dist =$(".zan").offset().top - $(window).scrollTop() 
+		  //console.log(dist)
+		  if (dist  < 400) {
+		     $(".share-btn").removeClass("show-share");
 		  }
 		}).trigger("scroll");
-	</script>
+
+
+		$(".sb-phone").hover(function(){
+		    $(".code").css("display","block");
+		},function(){
+		    $(".code").css("display","none");
+		});
+	</script>	
+<!---->
+
+	
 </body>
 </html>

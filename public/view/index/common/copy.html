@@ -1,0 +1,63 @@
+<div class="docker tips">
+		<div class="inner">
+			<!---->
+			<div class="tips-btn">
+				<span title="喜欢"><i class="sbtn sb-totop"></i>置顶</span>
+				<span title="收藏"><i class="sbtn sb-feed "></i>反馈</span>
+				<span title="微博"><i class="sbtn sb-msg"></i>聊天</span>
+				<span title="微信"><i class="sbtn sb-phone "></i>电话
+					<div class="code">
+						<img src="__IMG__qrcode.jpg" class="qrcode">
+						<p>扫码关注微信公众号</p>
+						<p>随时随地 灵感一下</p>
+					</div>
+				</span>
+			</div>
+			
+
+			
+		</div>
+	</div>
+
+	<!---->
+	<div class="docker footer">
+		<div class="inner">
+			<p class="foot-doc">
+				<a href="" class="foot-link">关于我们</a>
+				<a href="" class="foot-link">广告服务</a>
+				<a href="" class="foot-link">商户入驻</a>
+				<a href="" class="foot-link">免责申明</a>
+			</p>
+			<p  class="foot-info">  闽ICP备010000000号
+				<span>TOPYS.CN </span>
+				<span></span>
+				<span>2003-2019 ALL RIGHTS RESERVED.</span>
+				<span>福清市米饭联盟有限公司</span>
+			</p>
+			
+		</div>
+	</div>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		var dist 
+		$(window).scroll(function () {
+		  if ($(window).scrollTop() >= 50) {
+		    $(".share-btn").addClass("show-share");
+		  } else {
+		     $(".share-btn").removeClass("show-share");
+		  }
+		  
+		  dist =$(".zan").offset().top - $(window).scrollTop() 
+		  //console.log(dist)
+		  if (dist  < 400) {
+		     $(".share-btn").removeClass("show-share");
+		  }
+		}).trigger("scroll");
+
+
+		$(".sb-phone").hover(function(){
+		    $(".code").css("display","block");
+		},function(){
+		    $(".code").css("display","none");
+		});
+	</script>

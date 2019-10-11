@@ -14,7 +14,6 @@ class Index extends Controller{
 
     public function index(){
         /*
-        
         $a = new Item();
         echo $a->sayhello();
         echo "<h1>MilFunOs is  Working !</h1>";*/
@@ -28,11 +27,10 @@ class Index extends Controller{
     	return $this->fetch('detail');
     }
 
-    public function test()
+    public function login()
     {
         # code...
-        $a = new Jobs();
-        echo $a->sayhello();
+        return $this->fetch('login');
     }
 
     /*
