@@ -23,17 +23,9 @@ class Index extends Controller{
         
     }
 
-    public function get()
+    public function detail()
     {
-    	/*echo "MilFun Done!";*/
-        $user =model('Jobs'); 
-        $data=[
-            'jobname' => '测试',
-            'companyname' => '测试一下',
-            'companyid' => 1,
-            'district' => '福清市'
-        ];
-        $result = $user->save($data);
+    	return $this->fetch('detail');
     }
 
     public function test()

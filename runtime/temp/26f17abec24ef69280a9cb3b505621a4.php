@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1570698859;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570692467;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570522036;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1570759907;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570764590;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570764544;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,8 +11,7 @@
 <title>MilFun System</title>
 </head>
 <body>
-
-	<!---->
+<!---->
 	<div class="docker header">
 		<div class="inner">
 			<!---->
@@ -27,7 +26,7 @@
 				</div>
 				<!---->
 				<div class="nav-logo">
-					<img src="http://localhost/cityzone/public/static/img/zone-logo.png">
+					<a href="http://localhost/cityzone/index.php"><img src="http://localhost/cityzone/public/static/img/zone-logo.png"></a>
 				</div>
 				<!---->
 				<div class="nav-info">
@@ -39,6 +38,7 @@
 		</div>
 		
 	</div>
+	
 
 	<!---->
 	<div class="docker main">
@@ -50,10 +50,71 @@
 				<h2>Featured Video 灵感视频</h2>
 				<div class="left-bar">
 					
-					<ul class="flex">
+					<ul class="">
+						<li class="card">
+							<a href="http://localhost/cityzone/index.php/Index/index/detail.html"><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+						<li class="card">
+							<a href=""><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+						<li class="card">
+							<a href=""><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
 						
-						<li class="flex-item ">1</li>
-						<li class="flex-item">1</li>
 					</ul>
 
 				</div>
@@ -62,7 +123,9 @@
 					<div class="box reg">
 						<h3>大风帆股份但是</h3>
 						<div class="box-cont">
-							
+							<span>快来测试一下吧</span>
+							<img src="http://localhost/cityzone/public/static/img/five-graph.png">
+							<span>快来测试一下吧</span>
 						</div>
 					</div>
 				</div>
@@ -76,21 +139,186 @@
 	<!---->
 	<div class="docker list">
 		<div class="inner">
-			<div class="">
+			<div class="pick-list">
 				<h2>Editor's Pick 编辑推荐</h2>
-				<ul class="flex ">
-					<li  class="flex-item">股份上市</li>
-					<li  class="flex-item">立刻就会</li>
-					<li  class="flex-item">把擦反弹</li>
-					<li  class="flex-item">没法开工</li>
-				</ul>
+				<ul class="">
+						<li class="card">
+							<a href=""><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+						<li class="card">
+							<a href=""><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+						<li class="card">
+							<a href=""><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+						<li class="card">
+							<a href=""><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+						<li class="card">
+							<a href=""><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+						<li class="card">
+							<a href=""><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+						<li class="card">
+							<a href=""><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+						<li class="card">
+							<a href=""><img class="card-img" src="http://localhost/cityzone/public/static/img/pro-2.png"></a>
+							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+							<p class="card-data"><span>0评论</span>
+								<span>3收藏</span>
+								<span>3点赞</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="http://localhost/cityzone/public/static/img/logo.jpg" > 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+						
+					</ul>
 			</div>
 			<p class="more"><a href="" class="link-more">更多活动</a></p>
 		</div>
 		
 	</div>
 
-	<!---->
+	<!--
 	<div class="docker list">
 		<div class="inner">
 			<div class="load-more">
@@ -99,10 +327,12 @@
 			</div>
 			
 		</div>
-	</div>
+	</div>-->
 
 
-	<!---->
+	
+<!---->
+
 	<div class="docker tips">
 		<div class="inner">
 			<div class="tips-left">
@@ -135,5 +365,16 @@
 			
 		</div>
 	</div>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		var top=$(".header").offset().top;
+		$(window).scroll(function () {
+		  if ($(window).scrollTop() >= 150) {
+		    $(".header");
+		  } else {
+		     $(".header").removeClass("top");
+		  }
+		}).trigger("scroll");
+	</script>
 </body>
 </html>
