@@ -33,28 +33,32 @@
 				<div class="sign-right">
 					<div class="sign-inner pswd-load">
 						<div class="sign-tab">
-							<span class="tab" onclick="common.switchTab(0);">密码登陆</span>
-							<span class="tab" onclick="common.switchTab(1);">短信登陆</span>
-							<span class="tab" onclick="common.switchTab(2);">扫码登陆</span>
+							<span class="tab" onclick="co.switchTab(0);">密码登陆</span>
+							<span class="tab" onclick="co.switchTab(1);">短信登陆</span>
+							<span class="tab" onclick="co.switchTab(2);">扫码登陆</span>
 						</div>
+						<!---->
+						<form action="<:url('Access/login')>" method="post">
 						<div class="sign-raw">
 							<span class="ipt-wrap">
 								<i class="sbtn sb-mobile"></i>
-								<input class="ipt ipt-phone" type="tel" name="" placeholder="手机号">
+								<input class="ipt ipt-phone" type="tel" name="mobile" placeholder="手机号">
 							</span>
 						</div>
 						<div class="sign-raw">
 							<span class="ipt-wrap">
 								<i class="sbtn sb-info"></i>
-								<input class="ipt ipt-phone" type="password" name="" placeholder="密码">
-			
+								<input class="ipt ipt-pwd" type="password" name="password" placeholder="密码">
 							</span>
 						</div>
+						<button type="submit" class="btn2 loading ajax-login">登陆</button>
+						</form>
+						<!---->
 						<!--<div class="sign-raw" >
 							<div id="drag"></div>
 						</div>-->
 						
-						<p class="btn2 loading">登陆</p>
+						
 						<p class="sign-reg">
 							<span>
 								没有账号
@@ -63,9 +67,9 @@
 						</p></div>
 					<div class="sign-inner mobi-load">
 						<div class="sign-tab">
-							<span class="tab" onclick="common.switchTab(0);">密码登陆</span>
-							<span class="tab" onclick="common.switchTab(1);">短信登陆</span>
-							<span class="tab" onclick="common.switchTab(2);">扫码登陆</span>
+							<span class="tab" onclick="co.switchTab(0);">密码登陆</span>
+							<span class="tab" onclick="co.switchTab(1);">短信登陆</span>
+							<span class="tab" onclick="co.switchTab(2);">扫码登陆</span>
 						</div>
 						<div class="sign-raw">
 							<span class="ipt-wrap">
@@ -94,9 +98,9 @@
 						</p></div>
 					<div class="sign-inner code-load">
 						<div class="sign-tab">
-							<span class="tab" onclick="common.switchTab(0);">密码登陆</span>
-							<span class="tab" onclick="common.switchTab(1);">短信登陆</span>
-							<span class="tab" onclick="common.switchTab(2);">扫码登陆</span>
+							<span class="tab" onclick="co.switchTab(0);">密码登陆</span>
+							<span class="tab" onclick="co.switchTab(1);">短信登陆</span>
+							<span class="tab" onclick="co.switchTab(2);">扫码登陆</span>
 						</div>
 						<p class="sign-qrcode">
 							<span>

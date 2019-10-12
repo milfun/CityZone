@@ -2,7 +2,7 @@
 namespace app\index\controller;
 
 use think\Controller;
-use app\index\controller\Jobs;
+use app\index\controller\Access;
 
 class Index extends Controller{
     public function _initialize()
@@ -22,10 +22,7 @@ class Index extends Controller{
         
     }
 
-    public function detail()
-    {
-    	return $this->fetch('detail');
-    }
+  
 
     public function login()
     {

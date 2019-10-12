@@ -816,6 +816,10 @@ background-size: 30px;background-repeat: no-repeat;
     font-size: 14px;
     padding-left: 55px;
 }
+ .ipt-pwd {
+    font-size: 14px;
+    padding-left: 55px;
+}
 .loading{
     width: 312px;
     line-height: 30px;

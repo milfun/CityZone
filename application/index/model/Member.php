@@ -10,7 +10,7 @@ namespace app\index\model;
 use think\Model;
 use thinl\Request;
 
-class Members extends Model
+class Member extends Model
 {
 	protected $auto = [
 		'pwd_hash'
@@ -23,12 +23,10 @@ class Members extends Model
         parent::initialize();
         //TODO:自定义的初始化
     }
-
-    public function reg_member()
+    public function getMemberWhere($where)
     {
-    	# code...
+        return $this->where($where)->find()->toArray();
     }
-
     public function test()
     {
     	# code...
@@ -63,13 +61,5 @@ class Members extends Model
     	return $res;
     }
 
-    protected function setRegIpAttr()
-    {
-        return request()->ip();
-    }
-    protected function setPwdHashAttr()
-    {
-        return $this->randstr();
-    }
 
 }
