@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1570782892;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570783078;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570782536;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1570783421;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570783703;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1570783367;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570783355;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570783354;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +12,8 @@
 </head>
 <body>
 <!---->
-	<div class="docker header">
+	
+<div class="docker header">
 		<div class="inner">
 			<!---->
 			<nav >
@@ -37,8 +38,7 @@
 		</nav>
 		</div>
 		
-	</div>
-	
+	</div>	
 	<!---->
 	<div class="docker article">
 		<div class="inner">
@@ -220,10 +220,7 @@
 	</div>
 
 	
-
-   <!---->
-
-	<div class="docker tips">
+<div class="docker tips">
 		<div class="inner">
 			<!---->
 			<div class="tips-btn">
@@ -285,6 +282,9 @@
 		},function(){
 		    $(".code").css("display","none");
 		});
-	</script>
+	</script>	
+<!---->
+
+	
 </body>
 </html>

@@ -1,4 +1,6 @@
 {include file="/common/header" /}
+
+{load href="__CSS__drag.css" /}
 	<div class="sign">
 		<div class="sign-head">
 			<span><i></i>客户服务热线：400&nbsp;000&nbsp; 000</span>
@@ -8,17 +10,138 @@
 			<div class="sign-box">
 				<div class="sign-left">
 					<a class="logo" href="https://www.zhipin.com/" >
-      <img src="https://static.zhipin.com/v2/web/geek/images/logo.png">
-      <div>
-        <p>找工作</p>
-        <p>我要跟老板谈</p>
-      </div>
-    </a>
+				      <img src="https://static.zhipin.com/v2/web/geek/images/logo.png">
+				      <div>
+				        <p>找工作</p>
+				        <p>我要跟老板谈</p>
+				      </div>
+				    </a>
+
+				    <ul>
+				      <li>
+				        <i class="sb-hello"></i>
+				        <span>沟通</span>
+				        <span>在线职位及时沟通</span>
+				      </li>
+				      <li>
+				        <i class="sb-damon"></i>
+				        <span>任性选</span>
+				        <span>各大行业职位任你选</span>
+				      </li>
+				    </ul>
 				</div>
-				<div class="sign-right">sdac</div>
+				<div class="sign-right">
+					<div class="sign-inner pswd-load">
+						<div class="sign-tab">
+							<span class="active">密码登陆</span>
+							<span>短信登陆</span>
+							<span>扫码登陆</span>
+						</div>
+						<div class="sign-raw">
+							<span class="ipt-wrap">
+								<i class="sbtn sb-mobile"></i>
+								<input class="ipt ipt-phone" type="tel" name="" placeholder="手机号">
+							</span>
+						</div>
+						<div class="sign-raw">
+							<span class="ipt-wrap">
+								<i class="sbtn sb-info"></i>
+								<input class="ipt ipt-phone" type="password" name="" placeholder="密码">
+			
+							</span>
+						</div>
+						<div class="sign-raw" >
+							<div id="drag"></div>
+						</div>
+						
+						<p class="btn2 loading">登陆</p>
+						<p class="sign-reg">
+							<span>
+								没有账号
+								<a  href="" class="regnow">立即注册</a>
+							</span>
+						</p></div>
+					<div class="sign-inner mobi-load">
+						<div class="sign-tab">
+							<span>密码登陆</span>
+							<span  class="active">短信登陆</span>
+							<span>扫码登陆</span>
+						</div>
+						<div class="sign-raw">
+							<span class="ipt-wrap">
+								<i class="sbtn sb-mobile"></i>
+								<input class="ipt ipt-phone" type="tel" name="" placeholder="手机号">
+								
+							</span>
+						</div>
+						<div class="sign-raw">
+							<span class="ipt-wrap">
+								<i class="sbtn sb-info"></i>
+								<input class="ipt ipt-phone" type="password" name="" placeholder="短信验证码">
+								<span class="captcha">获取验证码</span>
+							</span>
+						</div>
+						<div class="sign-raw" >
+							<div id="drag"></div>
+						</div>
+						
+						<p class="btn2 loading">登陆</p>
+						<p class="sign-reg">
+							<span>
+								没有账号
+								<a  href="" class="regnow">立即注册</a>
+							</span>
+						</p></div>
+					<div class="sign-inner code-load">
+						<div class="sign-tab">
+							<span>密码登陆</span>
+							<span>短信登陆</span>
+							<span class="active">扫码登陆</span>
+						</div>
+						<p class="sign-qrcode">
+							<span>
+								使用 BOSS直聘 APP 扫码登录
+								<a  href="" class="regnow">扫码帮助</a>
+							</span>
+						</p></div>
+						
+							<img class="qr-loading" src="__IMG__qrcode.jpg">
+						
+						
+						<p class="sign-qrcode">
+							<span>
+								没有账号
+								<a  href="" class="regnow">立即注册</a>
+							</span>
+						</p></div>
+				</div>
 				
 			</div>
 			
 		</div>
 	</div>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+{load href="__JS__drag.js" /}
+<script type="text/javascript">
+$('#drag').drag();
+switchTab(0)
+function switchTab(arg) {
+	// body...
+	if (arg == 0) {
+		$('pswd-load').show();
+		$('mobi-load').hide();
+		$('code-load').hide();
+	}else if(arg == 1){
+		$('pswd-load').hide();
+		$('mobi-load').show();
+		$('code-load').hide();
+	}else{
+		$('pswd-load').hide();
+		$('mobi-load').hide();
+		$('code-load').show();
+	}
+	
+
+}
+</script>
 {include file="/common/footer" /}

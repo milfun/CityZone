@@ -2,7 +2,7 @@
 * @Author: MilFun
 * @Date:   2019-09-04 14:35:58
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-11 17:19:42
+* @Last Modified time: 2019-10-12 11:19:27
 */
 @charset "UTF-8";
 html, body, div, h1, h2, h3, h4, h5, h6, p, span, img, input, textarea, ul, ol, li, hr,form {margin: 0;padding: 0;    -webkit-text-size-adjust: none;}
@@ -148,12 +148,23 @@ nav{
     cursor: pointer;
     outline:none;
 }
+.btn2{
+    display: inline-block;
+    box-sizing: content-box;
+    line-height:  1.5;
+    border: 1px #333 solid;
+    padding: 5px;
+    color: #FFF;
+    background: #333;
+    text-align: center;
+    cursor: pointer;
+    outline:none;
+}
 .login{
     font-size: .875rem;
 }
 .btn:hover{
-    color: #FFF;
-    background: #333;
+    
 }
 /******************/
 .main{
@@ -381,8 +392,6 @@ article p{
     text-align: center;
 }
 .sbtn{
-    display: block;
-    
     height: 30px;
 
 }
@@ -409,6 +418,14 @@ background-size: 30px;background-repeat: no-repeat;}
     background: url(../img/totop.png);
 background-size: 30px;background-repeat: no-repeat;
 }
+.sb-damon{
+     background: url(../img/damon.png);
+background-size: 30px;background-repeat: no-repeat;
+}
+.sb-hello{
+     background: url(../img/hello.png);
+background-size: 30px;background-repeat: no-repeat;
+}
 .sb-feed{
     background: url(../img/feedback.png);
 background-size: 30px;background-repeat: no-repeat;
@@ -421,7 +438,14 @@ background-size: 30px;background-repeat: no-repeat;
     background: url(../img/phone.png);
 background-size: 30px;background-repeat: no-repeat;
 }
-
+.sb-mobile{
+    background: url(../img/mobile.png);
+background-size: 30px;background-repeat: no-repeat;
+}
+.sb-info{
+    background: url(../img/info.png);
+background-size: 30px;background-repeat: no-repeat;
+}
 
 .article-content{
     display: inline-block;
@@ -624,7 +648,7 @@ background-size: 30px;background-repeat: no-repeat;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #5dd5c8 url(../img/newbg.png) center bottom no-repeat;
+    background: #202020 url(../img/newbg.png) center bottom no-repeat;
     text-align: center;
     
 
@@ -662,13 +686,6 @@ background-size: 30px;background-repeat: no-repeat;
     border-bottom: 1px solid #edeeee;
     border-radius: 20px;
 }
-.sign-right{
-    display: inline-block;
-    float: right;
-    width: 520px;
-    min-height: 514px;
-    border-bottom: 1px solid #edeeee;
-}
 .sign-left .logo {
     float: none;
     display: block;
@@ -678,6 +695,7 @@ background-size: 30px;background-repeat: no-repeat;
     padding: 0;
 }
 .sign-left .logo img {
+    float: left;
     width: 42px;
     height: 42px;
 }
@@ -686,8 +704,153 @@ background-size: 30px;background-repeat: no-repeat;
     position: relative;
     bottom: -1px;
     right: 65px;
+    text-align: left;
+
 }
-.sign-left.logo  div p {
+.sign-left .logo  div p {
     color: #00c2b3;
     line-height: 20px;
+    font-size: 14px;
+}
+.sign-left ul {
+    margin: 50px 0 0 40px;
+    text-align: left;
+}
+.sign-left li {
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: #8d92a1;
+}
+.sign-left li i {
+    float: left;
+    width: 30px;
+    height: 42px;
+
+}
+.sign-left li>span:first-of-type {
+    line-height: 22px;
+    color: #8d92a1;
+    font-size: 16px;
+    font-weight: 700;
+}
+.sign-left li>span {
+    display: block;
+    margin-left: 50px;
+}
+
+.sign-right{
+    display: inline-block;
+    float: right;
+    width: 520px;
+    min-height: 514px;
+    border-bottom: 1px solid #edeeee;
+    text-align: center;
+}
+.sign-inner {
+   position: relative;
+    width: 324px;
+    padding-top: 68px;
+    margin: 0 auto;
+    color: #8d92a1;
+
+
+}
+.sign-tab {
+    display: flex;
+    justify-content: space-between;
+    height: 22px;
+    margin-bottom: 44px;
+    padding: 0 0 15px;
+    border-bottom: 2px solid #f2f5f9;
+    line-height: 22px;
+}
+.sign-raw{
+    display: block;
+    margin-bottom: 26px;
+}
+.ipt-wrap {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 100%;
+    -webkit-border-radius: 5px;
+    text-align: left;
+    border: 1px solid #e3e7ed;
+}
+.ipt-wrap i{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height:22px;
+    width: 30px;
+    height:  30px;
+    margin: 10px 0 0 10px;
+    z-index: 100;
+}
+.captcha{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right:  0;
+    line-height:30px;
+    height:  30px;
+    font-size: 12px;
+    color: #202020;
+    margin: 10px 10px 0 10px;
+    z-index: 100;
+}
+.ipt{
+    display: inline-block;
+    float: left;
+    padding: 5px 0 0 10px;
+    min-height: 40px;
+    line-height: 30px;
+    width: 269px;
+    font-size: 13px;
+    
+}
+ .ipt-phone {
+    font-size: 14px;
+    padding-left: 55px;
+}
+.loading{
+    width: 312px;
+    line-height: 30px;
+    height: 34px;
+}
+.sign-reg{
+    padding: 10px 0;
+    height: 50px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: right;
+}
+.regnow{
+    color: #202020;
+}
+.active{
+    color: #202020;
+}
+.sign-qrcode{
+    display: block;
+    padding: 10px 0;
+    height: 50px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+}
+.qr-loading{
+    display: inline-block;
+    width: 150px;
+}
+.pswd-load{
+    display: none;
+}
+.mobi-load{
+    display: none;
+}
+.code-load{
+    display: none;
 }
