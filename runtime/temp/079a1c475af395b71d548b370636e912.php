@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1570783421;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570783703;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1570783367;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570783355;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570783354;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1570783421;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570783703;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1570783367;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570847581;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570783354;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -235,9 +235,6 @@
 					</div>
 				</span>
 			</div>
-			
-
-			
 		</div>
 	</div>
 
@@ -251,7 +248,7 @@
 				<a href="" class="foot-link">免责申明</a>
 			</p>
 			<p  class="foot-info">  闽ICP备010000000号
-				<span>TOPYS.CN </span>
+				<span>MilFun.Fun </span>
 				<span></span>
 				<span>2003-2019 ALL RIGHTS RESERVED.</span>
 				<span>福清市米饭联盟有限公司</span>

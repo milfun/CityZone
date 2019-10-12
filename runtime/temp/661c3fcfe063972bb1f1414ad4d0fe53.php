@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\login.html";i:1570850349;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570783703;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570783354;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\login.html";i:1570867043;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570865237;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570866069;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +8,7 @@
 <meta http-equiv="pragma" content="no-cache"> 
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
 <link rel="stylesheet" type="text/css" href="http://localhost/cityzone/public/static/css/m.css" />
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <title>怪兽研习社</title>
 </head>
 <body>
@@ -47,9 +48,9 @@
 				<div class="sign-right">
 					<div class="sign-inner pswd-load">
 						<div class="sign-tab">
-							<span class="active">密码登陆</span>
-							<span>短信登陆</span>
-							<span>扫码登陆</span>
+							<span class="tab" onclick="common.switchTab(0);">密码登陆</span>
+							<span class="tab" onclick="common.switchTab(1);">短信登陆</span>
+							<span class="tab" onclick="common.switchTab(2);">扫码登陆</span>
 						</div>
 						<div class="sign-raw">
 							<span class="ipt-wrap">
@@ -64,9 +65,9 @@
 			
 							</span>
 						</div>
-						<div class="sign-raw" >
+						<!--<div class="sign-raw" >
 							<div id="drag"></div>
-						</div>
+						</div>-->
 						
 						<p class="btn2 loading">登陆</p>
 						<p class="sign-reg">
@@ -77,9 +78,9 @@
 						</p></div>
 					<div class="sign-inner mobi-load">
 						<div class="sign-tab">
-							<span>密码登陆</span>
-							<span  class="active">短信登陆</span>
-							<span>扫码登陆</span>
+							<span class="tab" onclick="common.switchTab(0);">密码登陆</span>
+							<span class="tab" onclick="common.switchTab(1);">短信登陆</span>
+							<span class="tab" onclick="common.switchTab(2);">扫码登陆</span>
 						</div>
 						<div class="sign-raw">
 							<span class="ipt-wrap">
@@ -108,16 +109,16 @@
 						</p></div>
 					<div class="sign-inner code-load">
 						<div class="sign-tab">
-							<span>密码登陆</span>
-							<span>短信登陆</span>
-							<span class="active">扫码登陆</span>
+							<span class="tab" onclick="common.switchTab(0);">密码登陆</span>
+							<span class="tab" onclick="common.switchTab(1);">短信登陆</span>
+							<span class="tab" onclick="common.switchTab(2);">扫码登陆</span>
 						</div>
 						<p class="sign-qrcode">
 							<span>
 								使用 BOSS直聘 APP 扫码登录
 								<a  href="" class="regnow">扫码帮助</a>
 							</span>
-						</p></div>
+						</p>
 						
 							<img class="qr-loading" src="http://localhost/cityzone/public/static/img/qrcode.jpg">
 						
@@ -127,39 +128,23 @@
 								没有账号
 								<a  href="" class="regnow">立即注册</a>
 							</span>
-						</p></div>
+						</p>
 				</div>
 				
 			</div>
 			
 		</div>
 	</div>
-<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script type="text/javascript" src="http://localhost/cityzone/public/static/js/drag.js"></script>
-<script type="text/javascript">
-$('#drag').drag();
-switchTab(0)
-function switchTab(arg) {
-	// body...
-	if (arg == 0) {
-		$('pswd-load').show();
-		$('mobi-load').hide();
-		$('code-load').hide();
-	}else if(arg == 1){
-		$('pswd-load').hide();
-		$('mobi-load').show();
-		$('code-load').hide();
-	}else{
-		$('pswd-load').hide();
-		$('mobi-load').hide();
-		$('code-load').show();
-	}
-	
-
-}
+<script type="text/javascript" src="http://localhost/cityzone/public/static/js/init.js"></script>
+<script>
+	var jsList = ["drag","common"]
+	milfun.init(jsList)
+	$('#drag').drag();
+	common.init();
 </script>
+
+
 <!---->
 
-	
 </body>
 </html>

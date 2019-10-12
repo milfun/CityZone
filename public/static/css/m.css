@@ -2,7 +2,7 @@
 * @Author: MilFun
 * @Date:   2019-09-04 14:35:58
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-12 11:19:27
+* @Last Modified time: 2019-10-12 15:09:31
 */
 @charset "UTF-8";
 html, body, div, h1, h2, h3, h4, h5, h6, p, span, img, input, textarea, ul, ol, li, hr,form {margin: 0;padding: 0;    -webkit-text-size-adjust: none;}
@@ -155,7 +155,7 @@ nav{
     border: 1px #333 solid;
     padding: 5px;
     color: #FFF;
-    background: #333;
+    background: #202020;
     text-align: center;
     cursor: pointer;
     outline:none;
@@ -747,7 +747,8 @@ background-size: 30px;background-repeat: no-repeat;
     text-align: center;
 }
 .sign-inner {
-   position: relative;
+    display: block;
+    position: relative;
     width: 324px;
     padding-top: 68px;
     margin: 0 auto;
@@ -846,11 +847,11 @@ background-size: 30px;background-repeat: no-repeat;
     width: 150px;
 }
 .pswd-load{
-    display: none;
+  
 }
 .mobi-load{
-    display: none;
+   
 }
 .code-load{
-    display: none;
+    
 }

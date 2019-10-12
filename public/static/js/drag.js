@@ -14,7 +14,7 @@
         var drag_bg = drag.find('.drag_bg');
         var text = drag.find('.drag_text');
         var maxWidth = drag.width() - handler.width();  //能滑动的最大间距
-        
+        //console.log(maxWidth)
         //鼠标按下时候的x轴的位置
         handler.mousedown(function(e){
             isMove = true;
@@ -45,7 +45,8 @@
         function dragOk(){
             handler.removeClass('handler_bg').addClass('handler_ok_bg');
             text.text('验证通过');
-            drag.css({'color': '#fff'});
+            text.css({'color': '#fff'});
+            //drag.css({'color': '#fff'});
             handler.unbind('mousedown');
             $(document).unbind('mousemove');
             $(document).unbind('mouseup');
