@@ -120,13 +120,9 @@
 			
 		</div>
 	</div>
-{load href="__JS__init.js" /}
+{load href="__JS__milfun.js" /}
 <script>
 	var jsList = ["drag","common"]
-	milfun.init(jsList)
-	$('#drag').drag();
-	common.init();
+	var mi = new Milfun(jsList);
 </script>
-
-
 {include file="/common/footer" /}

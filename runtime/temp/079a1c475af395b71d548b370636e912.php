@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1570783421;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570783703;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1570783367;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570847581;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570783354;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1570867947;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570867859;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1570783367;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570867764;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570867411;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +8,10 @@
 <meta http-equiv="pragma" content="no-cache"> 
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
 <link rel="stylesheet" type="text/css" href="http://localhost/cityzone/public/static/css/m.css" />
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <title>怪兽研习社</title>
 </head>
-<body>
-<!---->
+
 	
 <div class="docker header">
 		<div class="inner">
@@ -256,32 +256,14 @@
 			
 		</div>
 	</div>
-	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-	<script type="text/javascript">
-		var dist 
-		$(window).scroll(function () {
-		  if ($(window).scrollTop() >= 50) {
-		    $(".share-btn").addClass("show-share");
-		  } else {
-		     $(".share-btn").removeClass("show-share");
-		  }
-		  
-		  dist =$(".zan").offset().top - $(window).scrollTop() 
-		  //console.log(dist)
-		  if (dist  < 400) {
-		     $(".share-btn").removeClass("show-share");
-		  }
-		}).trigger("scroll");
-
-
-		$(".sb-phone").hover(function(){
-		    $(".code").css("display","block");
-		},function(){
-		    $(".code").css("display","none");
-		});
-	</script>	
+	
+		
+<script type="text/javascript" src="http://localhost/cityzone/public/static/js/init.js"></script>
+<script>
+	var jsList = ["detail"]
+	milfun.init(jsList)
+</script>
 <!---->
 
-	
 </body>
 </html>

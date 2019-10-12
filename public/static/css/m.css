@@ -2,7 +2,7 @@
 * @Author: MilFun
 * @Date:   2019-09-04 14:35:58
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-12 15:09:31
+* @Last Modified time: 2019-10-12 16:17:57
 */
 @charset "UTF-8";
 html, body, div, h1, h2, h3, h4, h5, h6, p, span, img, input, textarea, ul, ol, li, hr,form {margin: 0;padding: 0;    -webkit-text-size-adjust: none;}
@@ -392,6 +392,7 @@ article p{
     text-align: center;
 }
 .sbtn{
+    display: block;
     height: 30px;
 
 }

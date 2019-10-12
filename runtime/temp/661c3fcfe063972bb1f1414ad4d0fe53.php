@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\login.html";i:1570867043;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570865237;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570866069;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\login.html";i:1570869921;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1570867859;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570867411;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,8 +11,7 @@
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <title>怪兽研习社</title>
 </head>
-<body>
-<!---->
+
 	
 
 <link rel="stylesheet" type="text/css" href="http://localhost/cityzone/public/static/css/drag.css" />
@@ -135,15 +134,11 @@
 			
 		</div>
 	</div>
-<script type="text/javascript" src="http://localhost/cityzone/public/static/js/init.js"></script>
+<script type="text/javascript" src="http://localhost/cityzone/public/static/js/milfun.js"></script>
 <script>
 	var jsList = ["drag","common"]
-	milfun.init(jsList)
-	$('#drag').drag();
-	common.init();
+	var mi = new Milfun(jsList);
 </script>
-
-
 <!---->
 
 </body>

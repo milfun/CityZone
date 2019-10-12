@@ -52,6 +52,7 @@
             $(document).unbind('mouseup');
         }
     };
+    $('#drag').drag();
 })(jQuery);
 
 

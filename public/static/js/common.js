@@ -2,15 +2,15 @@
 * @Author: MilFun
 * @Date:   2019-10-12 15:16:11
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-12 15:57:45
+* @Last Modified time: 2019-10-12 16:43:05
 */
-var common = {
-	init:function(list){
-		console.log('I am in common');
-		this.switchTab(0);
-	},
-	switchTab:function(arg=0){
-		if (arg == 0) {
+class Common {
+  constructor() {
+  	this.switchTab(0);
+  }
+
+  switchTab(arg=0) {
+    if (arg == 0) {
 			$('.pswd-load').show();
 			$('.mobi-load').hide();
 			$('.code-load').hide();
@@ -24,6 +24,7 @@ var common = {
 			$('.code-load').show();
 		}else{
 
-		}
 	}
+  }
 }
+var co = new Common();
