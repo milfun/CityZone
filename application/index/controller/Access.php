@@ -18,6 +18,10 @@ class Access extends Controller{
         //$this->success('新增成功', 'User/list');
         //$this->error('新增失败');
         echo "Access  Controller";
+        //echo phpinfo();
+        // $test=new PDO();
+        // echo $test;
+        echo md5(md5('123456'));
         
     }
 
@@ -38,7 +42,7 @@ class Access extends Controller{
                 # code...
                 $this->assign('show_error_tips','用户名或密码错误');
             }else{
-                $this->success('登陆成功',url('index/index'));
+                $this->success('登陆成功',url('index'));
             }
         }
         return $this->fetch();
@@ -49,7 +53,7 @@ class Access extends Controller{
     {
         # code...
         $rule = [
-            'mobile' => 'require|regx:\d{11}',
+            'mobile' => 'require|\d{11}',
             'password' => 'require|max:25|min:6'
         ];
         $msg = [

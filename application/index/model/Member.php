@@ -24,8 +24,15 @@ class Member extends Model
         //TODO:自定义的初始化
     }
     public function getMemberWhere($where)
-    {
-        return $this->where($where)->find()->toArray();
+    {   
+        $res = $this->where($where)->find();
+        if ($res != null) {
+            # code...
+            return  $res->toArray();
+        }else{
+            return null;
+        }
+        
     }
     public function test()
     {

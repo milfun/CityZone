@@ -1,0 +1,1275 @@
+---------------------------------------------------------------
+[ 2019-10-13T12:50:58+08:00 ] 0.0.0.0 GET /cityzone/index.php
+[ info ] localhost/cityzone/index.php [运行时间：0.483247s][吞吐率：2.07req/s] [内存消耗：1,435.68kb] [文件加载：35]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T12:51:01+08:00 ] 0.0.0.0 GET /cityzone/index.php/Index/index/login.html
+[ info ] localhost/cityzone/index.php/Index/index/login.html [运行时间：0.050616s][吞吐率：19.76req/s] [内存消耗：1,464.33kb] [文件加载：36]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T12:51:03+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.219393s][吞吐率：4.56req/s] [内存消耗：2,526.28kb] [文件加载：43]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]could not find driver[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-10-13T12:52:45+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.048717s][吞吐率：20.53req/s] [内存消耗：2,526.28kb] [文件加载：43]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]could not find driver[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-10-13T12:55:10+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.044882s][吞吐率：22.28req/s] [内存消耗：2,526.28kb] [文件加载：43]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]could not find driver[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-10-13T12:55:14+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.033763s][吞吐率：29.62req/s] [内存消耗：2,526.28kb] [文件加载：43]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]could not find driver[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-10-13T12:56:56+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.039553s][吞吐率：25.28req/s] [内存消耗：2,526.49kb] [文件加载：43]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]could not find driver[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-10-13T13:01:16+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.046584s][吞吐率：21.47req/s] [内存消耗：2,526.49kb] [文件加载：43]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]could not find driver[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-10-13T13:03:22+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.044558s][吞吐率：22.44req/s] [内存消耗：1,316.73kb] [文件加载：35]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\PDO' not found[D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php:22]
+---------------------------------------------------------------
+[ 2019-10-13T13:03:38+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.031433s][吞吐率：31.81req/s] [内存消耗：1,316.76kb] [文件加载：35]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\PDO' not found[D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php:22]
+---------------------------------------------------------------
+[ 2019-10-13T13:06:41+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.022686s][吞吐率：44.08req/s] [内存消耗：1,316.76kb] [文件加载：35]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\PDO' not found[D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php:22]
+---------------------------------------------------------------
+[ 2019-10-13T13:10:58+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.034579s][吞吐率：28.92req/s] [内存消耗：1,316.76kb] [文件加载：35]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\PDO' not found[D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php:22]
+---------------------------------------------------------------
+[ 2019-10-13T13:11:12+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.048748s][吞吐率：20.51req/s] [内存消耗：2,526.28kb] [文件加载：43]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]could not find driver[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-10-13T13:12:01+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.033921s][吞吐率：29.48req/s] [内存消耗：1,318.16kb] [文件加载：36]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: config[D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php:24]
+---------------------------------------------------------------
+[ 2019-10-13T13:12:15+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.038594s][吞吐率：25.91req/s] [内存消耗：2,526.28kb] [文件加载：43]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]could not find driver[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-10-13T13:15:24+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.049064s][吞吐率：20.38req/s] [内存消耗：2,526.49kb] [文件加载：43]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]could not find driver[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-10-13T13:17:19+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.092154s][吞吐率：10.85req/s] [内存消耗：2,644.81kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003839s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.029114s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = ''  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.002223s ]
+[ error ] [0]致命错误: Call to a member function toArray() on null[D:\zend\Apache24\htdocs\CityZone\application\index\model\Member.php:28]
+---------------------------------------------------------------
+[ 2019-10-13T13:17:40+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.068811s][吞吐率：14.53req/s] [内存消耗：2,644.60kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010933s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.021149s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = ''  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000532s ]
+[ error ] [0]致命错误: Call to a member function toArray() on null[D:\zend\Apache24\htdocs\CityZone\application\index\model\Member.php:28]
+---------------------------------------------------------------
+[ 2019-10-13T13:18:28+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.057639s][吞吐率：17.35req/s] [内存消耗：2,644.67kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001277s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.020651s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = ''  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ error ] [0]致命错误: Call to a member function toArray() on null[D:\zend\Apache24\htdocs\CityZone\application\index\model\Member.php:30]
+---------------------------------------------------------------
+[ 2019-10-13T13:18:54+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.023286s][吞吐率：42.94req/s] [内存消耗：1,522.03kb] [文件加载：37]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '34',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]call_user_func_array() expects parameter 1 to be a valid callback, class 'think\Validate' does not have a method 'regx'[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\Validate.php:408]
+---------------------------------------------------------------
+[ 2019-10-13T13:19:22+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.084331s][吞吐率：11.86req/s] [内存消耗：2,644.65kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '34',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011187s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.029042s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '14e1b600b1fd579f47433b88e8d85291'  AND `status` = 1 LIMIT 1 [ RunTime:0.000418s ]
+[ error ] [0]致命错误: Call to a member function toArray() on null[D:\zend\Apache24\htdocs\CityZone\application\index\model\Member.php:30]
+---------------------------------------------------------------
+[ 2019-10-13T13:21:19+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.082058s][吞吐率：12.19req/s] [内存消耗：2,645.08kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '34',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010920s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.025115s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '14e1b600b1fd579f47433b88e8d85291'  AND `status` = 1 LIMIT 1 [ RunTime:0.000503s ]
+[ error ] [0]致命错误: Call to a member function toArray() on null[D:\zend\Apache24\htdocs\CityZone\application\index\model\Member.php:30]
+---------------------------------------------------------------
+[ 2019-10-13T13:21:30+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.110303s][吞吐率：9.07req/s] [内存消耗：2,788.33kb] [文件加载：47]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '34',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\zend\Apache24\htdocs\CityZone\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'data',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010803s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.020919s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '14e1b600b1fd579f47433b88e8d85291'  AND `status` = 1 LIMIT 1 [ RunTime:0.000576s ]
+---------------------------------------------------------------
+[ 2019-10-13T13:21:34+08:00 ] 0.0.0.0 GET /cityzone/index.php/index/index/index.html
+[ info ] localhost/cityzone/index.php/index/index/index.html [运行时间：0.031790s][吞吐率：31.46req/s] [内存消耗：1,045.31kb] [文件加载：27]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T13:21:52+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.059681s][吞吐率：16.76req/s] [内存消耗：2,645.32kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009994s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.019217s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000536s ]
+[ error ] [0]致命错误: Call to a member function toArray() on null[D:\zend\Apache24\htdocs\CityZone\application\index\model\Member.php:30]
+---------------------------------------------------------------
+[ 2019-10-13T13:23:13+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.074397s][吞吐率：13.44req/s] [内存消耗：2,645.45kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009794s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.019462s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000448s ]
+[ error ] [0]致命错误: Call to a member function toArray() on null[D:\zend\Apache24\htdocs\CityZone\application\index\model\Member.php:31]
+---------------------------------------------------------------
+[ 2019-10-13T13:23:30+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.071076s][吞吐率：14.07req/s] [内存消耗：2,659.24kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\zend\Apache24\htdocs\CityZone\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'show_error_tips',
+  1 => 'data',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010587s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.020076s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000421s ]
+---------------------------------------------------------------
+[ 2019-10-13T13:23:33+08:00 ] 0.0.0.0 GET /cityzone/index.php/index/index/index.html
+[ info ] localhost/cityzone/index.php/index/index/index.html [运行时间：0.016421s][吞吐率：60.90req/s] [内存消耗：1,045.31kb] [文件加载：27]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T13:23:56+08:00 ] 0.0.0.0 GET /cityzone/index.php/index/index/index.html
+[ info ] localhost/cityzone/index.php/index/index/index.html [运行时间：0.016474s][吞吐率：60.70req/s] [内存消耗：1,045.44kb] [文件加载：27]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T13:24:01+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.075395s][吞吐率：13.26req/s] [内存消耗：2,643.56kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011157s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.020687s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000350s ]
+[ error ] [0]模板文件不存在:D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\access\login.html[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2019-10-13T13:24:14+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.087243s][吞吐率：11.46req/s] [内存消耗：2,643.56kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009856s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.030067s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000427s ]
+[ error ] [0]模板文件不存在:D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\access\login.html[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2019-10-13T13:24:26+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.071099s][吞吐率：14.06req/s] [内存消耗：2,643.56kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009787s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.020773s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000482s ]
+[ error ] [0]模板文件不存在:D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\access\login.html[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2019-10-13T13:24:52+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.062716s][吞吐率：15.94req/s] [内存消耗：2,659.78kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '34',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\zend\Apache24\htdocs\CityZone\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'data',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010397s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.019956s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '14e1b600b1fd579f47433b88e8d85291'  AND `status` = 1 LIMIT 1 [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2019-10-13T13:24:55+08:00 ] 0.0.0.0 GET /cityzone/index.php/index/index/index.html
+[ info ] localhost/cityzone/index.php/index/index/index.html [运行时间：0.015189s][吞吐率：65.84req/s] [内存消耗：1,045.31kb] [文件加载：27]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T13:25:09+08:00 ] 0.0.0.0 GET /cityzone/index.php/index/index/index.html
+[ info ] localhost/cityzone/index.php/index/index/index.html [运行时间：0.014661s][吞吐率：68.21req/s] [内存消耗：1,045.44kb] [文件加载：27]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T13:25:19+08:00 ] 0.0.0.0 GET /cityzone/index.php/index/index/index.html
+[ info ] localhost/cityzone/index.php/index/index/index.html [运行时间：0.028388s][吞吐率：35.23req/s] [内存消耗：1,045.44kb] [文件加载：27]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T13:25:27+08:00 ] 0.0.0.0 GET /cityzone/index.php/Index/index/login.html
+[ info ] localhost/cityzone/index.php/Index/index/login.html [运行时间：0.018537s][吞吐率：53.95req/s] [内存消耗：1,323.79kb] [文件加载：34]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T13:25:29+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.062323s][吞吐率：16.05req/s] [内存消耗：2,643.52kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010105s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.019547s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000526s ]
+[ error ] [0]模板文件不存在:D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\access\login.html[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2019-10-13T13:25:59+08:00 ] 0.0.0.0 POST /cityzone/index.php/index/access/login.html
+[ info ] localhost/cityzone/index.php/index/access/login.html [运行时间：0.066519s][吞吐率：15.03req/s] [内存消耗：2,643.52kb] [文件加载：45]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'access',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18558704247',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Access->login[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Access.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010768s ] mysql:host=127.0.0.1;port=3306;dbname=milfun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.021274s ]
+[ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000508s ]
+[ error ] [0]模板文件不存在:D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\access\login.html[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\view\driver\Think.php:82]
