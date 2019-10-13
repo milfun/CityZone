@@ -1273,3 +1273,123 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `mf_member` [ RunTime:0.021274s ]
 [ sql ] [ SQL ] SELECT * FROM `mf_member` WHERE  `mobile` = '18558704247'  AND `password` = '74be16979710d4c4e7c6647856088456'  AND `status` = 1 LIMIT 1 [ RunTime:0.000508s ]
 [ error ] [0]模板文件不存在:D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\access\login.html[D:\zend\Apache24\htdocs\CityZone\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2019-10-13T13:27:54+08:00 ] 0.0.0.0 GET /cityzone/index.php/Index/index/detail.html
+[ info ] localhost/cityzone/index.php/Index/index/detail.html [运行时间：0.020703s][吞吐率：48.30req/s] [内存消耗：1,309.40kb] [文件加载：35]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T13:28:30+08:00 ] 0.0.0.0 GET /cityzone/index.php/Index/index/detail.html
+[ info ] localhost/cityzone/index.php/Index/index/detail.html [运行时间：0.061083s][吞吐率：16.37req/s] [内存消耗：1,424.52kb] [文件加载：35]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->detail[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T13:28:44+08:00 ] 0.0.0.0 GET /cityzone/index.php/Index/index/detail.html
+[ info ] localhost/cityzone/index.php/Index/index/detail.html [运行时间：0.020886s][吞吐率：47.88req/s] [内存消耗：1,279.89kb] [文件加载：33]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->detail[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-13T13:28:46+08:00 ] 0.0.0.0 GET /cityzone/index.php
+[ info ] localhost/cityzone/index.php [运行时间：0.017269s][吞吐率：57.91req/s] [内存消耗：1,284.02kb] [文件加载：33]
+[ info ] [ LANG ] D:\zend\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://localhost/cityzone/index.php/Index/index/detail.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9655209984; PHPSESSID=llllg69s8vvja2b9c85jhgan83',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\zend\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\zend\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

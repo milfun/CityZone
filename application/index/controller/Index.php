@@ -29,6 +29,11 @@ class Index extends Controller{
         # code...
         return $this->fetch('login');
     }
+    public function detail()
+    {
+        # code...
+        return $this->fetch('detail');
+    }
 
     /*
     *   首页职位列表
