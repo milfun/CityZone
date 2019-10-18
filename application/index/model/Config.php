@@ -3,7 +3,7 @@
  * @Author: MilFun
  * @Date:   2019-09-25 10:06:13
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-18 17:04:12
+ * @Last Modified time: 2019-10-18 17:29:17
  */
 namespace app\index\model;
 
@@ -20,8 +20,10 @@ class Config extends Model
             $res[$k]['name'] = $v['name'];
             $res[$k]['value'] = $v['value'];
         }
-        return json_decode(json_encode($res),true);
-         
+        $res = json_decode(json_encode($res),true);
+        if(!config('config_check')){
+            $this->setConfigCache($res);
+        }
     }
 
     /**
@@ -30,7 +32,11 @@ class Config extends Model
     protected function setConfigCache($value)
     {
         # 
-        Config::set('Db_config_data',$value);
+        foreach ($value as $k => $v) {
+            # code...
+             config($v['name'],$v['value']);
+        }
+        config('config_check',true);
     }
 
     public function test()

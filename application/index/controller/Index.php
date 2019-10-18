@@ -11,9 +11,8 @@ class Index extends Controller{
         //$this->success('新增成功', 'User/list');
         //$this->error('新增失败');
         $com =new Config(); 
-
         $com->getConfigCache();
-        dump(config('Db_config_data'));
+        dump(config('config_check'));
     }
 
     public function index(){
