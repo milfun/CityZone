@@ -1,5 +1,44 @@
-{include file="/common/header" /}
-{include file="/common/nav" /}	
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571034618;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571384182;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571034594;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570867764;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570867411;}*/ ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
+<link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<title>米饭联盟- 最适合你的知识分享平台</title>
+</head>
+
+	
+<div class="docker header">
+		<div class="inner">
+			<!---->
+			<nav >
+				<!---->
+				<div class="nav-item">
+					<a href="" class="nav-link">发现</a>
+					<a href="" class="nav-link">有聊</a>
+					<a href="" class="nav-link">活动</a>
+					<a href="" class="nav-link">未知商店</a>
+					<a href="" class="nav-link">Zone学院</a>
+				</div>
+				<!---->
+				<div class="nav-logo">
+					<a href="http://milfun.com/index.php"><img src="http://milfun.com/public/static/img/zone-logo.png"></a>
+				</div>
+				<!---->
+				<div class="nav-info">
+					
+					<a href="http://milfun.com/Index/index/login.html" class="btn login">注册/登陆</a>
+				</div>
+				
+		</nav>
+		</div>
+		
+	</div>	
 
 	<!---->
 	<div class="docker main">
@@ -13,7 +52,7 @@
 					
 					<ul class="">
 						<li class="card">
-							<a href="http://milfun.com/Index/index/detail.html"><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href="http://milfun.com/Index/index/detail.html"><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -26,7 +65,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -34,7 +73,7 @@
 							</p>
 						</li>
 						<li class="card">
-							<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -47,7 +86,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -55,7 +94,7 @@
 							</p>
 						</li>
 						<li class="card">
-							<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -68,7 +107,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -85,7 +124,7 @@
 						<h3>大风帆股份但是</h3>
 						<div class="box-cont">
 							<span>快来测试一下吧</span>
-							<img src="__IMG__five-graph.png">
+							<img src="http://milfun.com/public/static/img/five-graph.png">
 							<span>快来测试一下吧</span>
 						</div>
 					</div>
@@ -104,7 +143,7 @@
 				<h2>Editor's Pick 编辑推荐</h2>
 				<ul class="">
 						<li class="card">
-							<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -117,7 +156,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -125,7 +164,7 @@
 							</p>
 						</li>
 						<li class="card">
-							<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -138,7 +177,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -146,7 +185,7 @@
 							</p>
 						</li>
 						<li class="card">
-							<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -159,7 +198,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -167,7 +206,7 @@
 							</p>
 						</li>
 						<li class="card">
-							<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -180,7 +219,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -188,7 +227,7 @@
 							</p>
 						</li>
 						<li class="card">
-							<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -201,7 +240,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -209,7 +248,7 @@
 							</p>
 						</li>
 						<li class="card">
-							<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -222,7 +261,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -230,7 +269,7 @@
 							</p>
 						</li>
 						<li class="card">
-							<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -243,7 +282,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -251,7 +290,7 @@
 							</p>
 						</li>
 						<li class="card">
-							<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
+							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
@@ -264,7 +303,7 @@
 								<span>3点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="__IMG__logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -293,5 +332,45 @@
 	<!---->
 	
 
-{include file="/common/copy" /}	
-{include file="/common/footer" /}
+<div class="docker tips">
+		<div class="inner">
+			<!---->
+			<div class="tips-btn">
+				<span title="喜欢"><i class="sbtn sb-totop"></i>置顶</span>
+				<span title="收藏"><i class="sbtn sb-feed "></i>反馈</span>
+				<span title="微博"><i class="sbtn sb-msg"></i>聊天</span>
+				<span title="微信"><i class="sbtn sb-phone "></i>电话
+					<div class="code">
+						<img src="http://milfun.com/public/static/img/qrcode.jpg" class="qrcode">
+						<p>扫码关注微信公众号</p>
+						<p>随时随地 灵感一下</p>
+					</div>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!---->
+	<div class="docker footer">
+		<div class="inner">
+			<p class="foot-doc">
+				<a href="" class="foot-link">关于我们</a>
+				<a href="" class="foot-link">广告服务</a>
+				<a href="" class="foot-link">商户入驻</a>
+				<a href="" class="foot-link">免责申明</a>
+			</p>
+			<p  class="foot-info">  闽ICP备010000000号
+				<span>MilFun.Fun </span>
+				<span></span>
+				<span>2003-2019 ALL RIGHTS RESERVED.</span>
+				<span>福清市米饭联盟有限公司</span>
+			</p>
+			
+		</div>
+	</div>
+	
+		
+<!---->
+
+</body>
+</html>

@@ -3,37 +3,36 @@
  * @Author: MilFun
  * @Date:   2019-09-25 10:06:13
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-09-25 14:18:42
+ * @Last Modified time: 2019-10-18 17:04:12
  */
 namespace app\index\model;
 
 use think\Model;
 use thinl\Request;
 
-class Member extends Model
+class Config extends Model
 {
-	protected $auto = [
-		'pwd_hash'
-	];
-
-	//自定义初始化
-    protected function initialize()
-    {
-        //需要调用`Model`的`initialize`方法
-        parent::initialize();
-        //TODO:自定义的初始化
-    }
-    public function getMemberWhere($where)
+    public function getConfigList()
     {   
-        $res = $this->where($where)->find();
-        if ($res != null) {
-            # code...
-            return  $res->toArray();
-        }else{
-            return null;
+        $res = $this->field('name,value')->select();
+       // $this->setConfigCache($res);
+        foreach ($res as $k => $v) {
+            $res[$k]['name'] = $v['name'];
+            $res[$k]['value'] = $v['value'];
         }
-        
+        return json_decode(json_encode($res),true);
+         
     }
+
+    /**
+    *   都出来的config设置到系统配置里
+    */
+    protected function setConfigCache($value)
+    {
+        # 
+        Config::set('Db_config_data',$value);
+    }
+
     public function test()
     {
     	# code...

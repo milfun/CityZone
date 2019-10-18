@@ -142,9 +142,9 @@ return [
 
     // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '__IMG__' => 'http://localhost/cityzone/public/static/img/',
-        '__CSS__' => 'http://localhost/cityzone/public/static/css/',
-        '__JS__' => 'http://localhost/cityzone/public/static/js/',
+        '__IMG__' => 'http://milfun.com/public/static/img/',
+        '__CSS__' => 'http://milfun.com/public/static/css/',
+        '__JS__' => 'http://milfun.com/public/static/js/',
     ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',

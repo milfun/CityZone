@@ -1,13 +1,11 @@
 <?php
-
 /**
  * @Author: MilFun
  * @Date:   2019-09-25 10:57:55
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-08 11:33:52
+ * @Last Modified time: 2019-10-18 15:48:07
  */
 namespace app\index\controller;
-
 use think\Controller;
 use think\Validate;
 
@@ -18,17 +16,18 @@ class Access extends Controller{
         //$this->success('新增成功', 'User/list');
         //$this->error('新增失败');
         echo "Access  Controller";
-        //echo phpinfo();
-        // $test=new PDO();
-        // echo $test;
-        echo md5(md5('123456'));
         
+    }
+
+    public function passport($value='')
+    {
+        # code...
     }
 
     public function login()
     {
     	# code...
-    	echo "Hello MilFun";
+    	//echo "Hello MilFun";
         if (request()->isPost()) {
             # code...
             $data = input('post.');
@@ -44,8 +43,9 @@ class Access extends Controller{
             }else{
                 $this->success('登陆成功',url('index'));
             }
+        }else{
+            echo "something wrong";
         }
-        return $this->fetch();
 
     }
 
@@ -61,8 +61,7 @@ class Access extends Controller{
             'password.require' => '密码不能为空'
         ];
         $validate = new Validate($rule,$msg);
-        $result = $validate->check($data);
-        if (!$result) {
+        if (!$validate->check($data)) {
             # code...
             return $validate->getError();
         }
@@ -89,7 +88,5 @@ class Access extends Controller{
         }
         return false;
     }
-
-    
 
 }

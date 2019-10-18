@@ -2,7 +2,7 @@
 namespace app\index\controller;
 
 use think\Controller;
-use app\index\controller\Access;
+use app\index\controller\Config;
 
 class Index extends Controller{
     public function _initialize()
@@ -10,6 +10,10 @@ class Index extends Controller{
         //echo 'init<br/>';
         //$this->success('新增成功', 'User/list');
         //$this->error('新增失败');
+        $com =new Config(); 
+
+        $com->getConfigCache();
+        dump(config('Db_config_data'));
     }
 
     public function index(){
