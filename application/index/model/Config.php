@@ -3,7 +3,7 @@
  * @Author: MilFun
  * @Date:   2019-09-25 10:06:13
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-18 17:29:17
+ * @Last Modified time: 2019-10-21 09:40:17
  */
 namespace app\index\model;
 
@@ -15,29 +15,17 @@ class Config extends Model
     public function getConfigList()
     {   
         $res = $this->field('name,value')->select();
-       // $this->setConfigCache($res);
-        foreach ($res as $k => $v) {
-            $res[$k]['name'] = $v['name'];
-            $res[$k]['value'] = $v['value'];
-        }
         $res = json_decode(json_encode($res),true);
-        if(!config('config_check')){
-            $this->setConfigCache($res);
+        //dump($res);
+        $config = [];
+        if ($res && is_array($res)) {
+            foreach ($res as $v) {
+                $config[$v['name']] = $v['value'];
+            }
         }
+        return $config;
     }
 
-    /**
-    *   都出来的config设置到系统配置里
-    */
-    protected function setConfigCache($value)
-    {
-        # 
-        foreach ($value as $k => $v) {
-            # code...
-             config($v['name'],$v['value']);
-        }
-        config('config_check',true);
-    }
 
     public function test()
     {

@@ -1,0 +1,63 @@
+{include file="/common/header" /}
+{load href="__CSS__sspai.css" /}
+
+{include file="/common/nav" /}	
+<!---->
+<div class="docker main">
+		<div class="inner">
+			
+			<div>
+					<!--保留块-->
+					<div class="keep"></div>
+					<!--文章顶部信息-->
+					<div class="article-head">
+						<p class="category">
+							<a id="article-type" href=""  contenteditable="true">创意越过界</a>
+						</p>
+						<h1 id="article-title" contenteditable="true">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h1>
+						<p id="article-tag" class="article-tag" contenteditable="true">
+							<span class="tag">品牌</span>
+							<span class="tag">创意</span>
+							<span class="tag">灵感</span>
+							<span class="tag">品牌</span>
+							<span class="tag">创意</span>
+							<span class="tag">灵感</span>
+						</p>
+					</div>
+
+					<!--设置展示的div添加id-->
+				    <div id="result" ></div>
+
+				    <div id="tool">
+				    	<p>MilFun文章编辑器</p>
+				    	<!--设置id为oriContent，如果想实现实时更新，使用onkeyup方法-->
+				    	 <textarea id="MilFun" placeholder="请输入文章内容" onkeyup="convert()"></textarea>
+				    	  <a href="" class="link-more">提交信息</a>
+				    </div>
+				    
+				   
+
+			</div>
+
+		   
+		</div>
+		 
+
+		<!-- Tips -->
+
+		<!-- Tips End-->
+
+</div>
+
+{load href="__JS__showdown.min.js" /}
+<script>
+
+var html,text,onverter 
+function convert(){
+    text = $("#MilFun").val();
+    converter = new showdown.Converter();
+    html = converter.makeHtml(text);
+    $("#result").html(html) ;
+}
+</script>
+

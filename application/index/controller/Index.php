@@ -7,20 +7,26 @@ use app\index\controller\Config;
 class Index extends Controller{
     public function _initialize()
     {
-        //echo 'init<br/>';
-        //$this->success('新增成功', 'User/list');
-        //$this->error('新增失败');
-        $com =new Config(); 
-        $com->getConfigCache();
-        dump(config('config_check'));
+        // 配置变化后，快速清空
+        //cache('DB_CONFIG_DATA',null);
+
+        $conf = new Config;
+        $conf->getConfigCache();
+        if (!is_open()) {
+            $this->error('网站已经关闭');
+        }
+        //dump(is_open());
+        //dump(config('site_name'));
     }
 
     public function index(){
-        /*
-        $a = new Item();
-        echo $a->sayhello();
-        echo "<h1>MilFunOs is  Working !</h1>";*/
+        
+        $blog = new \app\index\controller\Blog();
+        $blog->getHotBlog();
+        //cache('hot_blog',null);
+        //dump(cache('hot_blog'));
         //var_dump($s) ;
+
         return $this->fetch('index');
         
     }
@@ -41,14 +47,9 @@ class Index extends Controller{
     /*
     *   首页职位列表
     */
-    public function jobs()
+    public function markdown()
     {
-        $user =model('Jobs'); 
-        $res = $user->getJobList();
-        //echo input('id');
-        //echo $res;
-        $this->assign($res);
-        return $this->fetch('jobs');
+        return $this->fetch('markdown');
     }
 
     /*

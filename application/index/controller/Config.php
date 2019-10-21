@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-09-25 10:59:13
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-18 17:28:13
+ * @Last Modified time: 2019-10-21 09:44:09
  */
 namespace app\index\controller;
 
@@ -14,21 +14,18 @@ class Config extends Controller{
     public function index()
     {
     	echo "Config Controller";
-    	dump($request->only(['mid']));
     }
 
     public function getConfigCache()
     {
         # code...
-        if(config('config_check')){
-            $com =model('Config'); 
-            $res = $com->getConfigList();
-            echo "1111111111";
-        }else{
-            echo "22222222";
+        $config = cache('DB_CONFIG_DATA');
+        if (!$config) {
+            //echo "111111111";
+            $config =model('Config')->getConfigList();
+            cache('DB_CONFIG_DATA',$config);
         }
-        
-
+        config($config);
     }
 
     

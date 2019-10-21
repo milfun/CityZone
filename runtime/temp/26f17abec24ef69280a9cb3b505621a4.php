@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571034618;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571384343;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571034594;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570867764;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1570867411;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571641946;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571638594;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571034594;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570867764;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,9 +9,9 @@
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<title>米饭联盟- 最适合你的知识分享平台</title>
+<title>最适合你的知识分享平台</title>
 </head>
-
+<body>
 	
 <div class="docker header">
 		<div class="inner">
@@ -51,18 +51,19 @@
 				<div class="left-bar">
 					
 					<ul class="">
-						<li class="card">
-							<a href="http://milfun.com/Index/index/detail.html"><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+					<?php if(is_array($hot_blog) || $hot_blog instanceof \think\Collection || $hot_blog instanceof \think\Paginator): $i = 0; $__LIST__ = $hot_blog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$bo): $mod = ($i % 2 );++$i;?>
+						<li class="card" >
+							<a href="<?php echo url('index/detail'); ?>"><img class="card-img" src="<?php echo $bo['imgurl']; ?>"></a>
+							<a href=""><h3 class="card-tit"><?php echo $bo['aname']; ?></h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
 								<span class="tag">创意</span>
 								<span class="tag">灵感</span>
 							</p>
 							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
+							<p class="card-data"><span><?php echo $bo['common']; ?>评论</span>
+								<span><?php echo $bo['hot']; ?>收藏</span>
+								<span><?php echo $bo['likes']; ?>点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
 								<img src="http://milfun.com/public/static/img/logo.jpg" > 
@@ -72,49 +73,7 @@
 								</div>
 							</p>
 						</li>
-						<li class="card">
-							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
-							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
-							<div class="bot-line"></div>
-							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
-								<div class="card-info">
-									<span>MilFun</span>
-									<span class="card-time">1 小时前</span>
-								</div>
-							</p>
-						</li>
-						<li class="card">
-							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
-							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
-							<div class="bot-line"></div>
-							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
-								<div class="card-info">
-									<span>MilFun</span>
-									<span class="card-time">1 小时前</span>
-								</div>
-							</p>
-						</li>
-						
+					<?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
 
 				</div>

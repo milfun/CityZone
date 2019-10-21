@@ -6,10 +6,5 @@ function sys_md5($string){
 
 function is_open(){
 	//C('wz_web_open');
-	if(config('is_close')){
-		return true;
-	}
-	else{
-		return false;
-	}
+	return config('is_close')==1?true:false;
 }
