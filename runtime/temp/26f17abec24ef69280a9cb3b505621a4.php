@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571641946;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571638594;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571034594;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570867764;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571645999;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571638594;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571646979;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570867764;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,7 +32,7 @@
 				<!---->
 				<div class="nav-info">
 					
-					<a href="http://milfun.com/Index/index/login.html" class="btn login">注册/登陆</a>
+					<!--<a href="http://milfun.com/Index/index/login.html" class="btn login">注册/登陆</a>-->
 				</div>
 				
 		</nav>
@@ -53,14 +53,13 @@
 					<ul class="">
 					<?php if(is_array($hot_blog) || $hot_blog instanceof \think\Collection || $hot_blog instanceof \think\Paginator): $i = 0; $__LIST__ = $hot_blog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$bo): $mod = ($i % 2 );++$i;?>
 						<li class="card" >
-							<a href="<?php echo url('index/detail'); ?>"><img class="card-img" src="<?php echo $bo['imgurl']; ?>"></a>
+							<a href="<?php echo urm('blog',['aid'=>$bo['aid']]); ?>" url=""><img class="card-img" src="<?php echo $bo['imgurl']; ?>"></a>
 							<a href=""><h3 class="card-tit"><?php echo $bo['aname']; ?></h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
 								<span class="tag">创意</span>
 								<span class="tag">灵感</span>
 							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
 							<p class="card-data"><span><?php echo $bo['common']; ?>评论</span>
 								<span><?php echo $bo['hot']; ?>收藏</span>
 								<span><?php echo $bo['likes']; ?>点赞</span></p>

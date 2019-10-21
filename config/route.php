@@ -12,7 +12,7 @@
 use think\Route;
 
 Route::rule('/','index/index/index');
-Route::rule('jobs/','index/index/jobs','get',[],[]);
+Route::rule('blog/:aid','index/blog/index','get',[],[]);
 Route::rule('jobs/:jid','index/index/jobs','get',[],[]);
 Route::rule('companys/','index/index/companys','get',[],[]);
 Route::rule('resumes/','index/index/resumes','get',[],[]);

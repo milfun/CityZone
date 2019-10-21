@@ -2,6 +2,7 @@
 namespace app\index\controller;
 
 use think\Controller;
+use think\Request;
 use app\index\controller\Config;
 
 class Index extends Controller{
@@ -40,8 +41,7 @@ class Index extends Controller{
     }
     public function detail()
     {
-        # code...
-        return $this->fetch('detail');
+        
     }
 
     /*

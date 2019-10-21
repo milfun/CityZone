@@ -8,3 +8,9 @@ function is_open(){
 	//C('wz_web_open');
 	return config('is_close')==1?true:false;
 }
+function urm($mod,$string){
+	if ( is_array($string)){
+		$string = implode("&",$string);
+	}
+	return 'http://milfun.com/'.$mod.'/'.$string.'.html';
+}

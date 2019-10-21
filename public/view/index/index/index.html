@@ -14,17 +14,16 @@
 					<ul class="">
 					{volist name="hot_blog" id="bo"}
 						<li class="card" >
-							<a href="<:url('index/detail')>"><img class="card-img" src="<$bo.imgurl>"></a>
-							<a href=""><h3 class="card-tit"><$bo.aname></h3></a>
+							<a href="{:urm('blog',['aid'=>$bo.aid])}" url=""><img class="card-img" src="{$bo.imgurl}"></a>
+							<a href=""><h3 class="card-tit">{$bo.aname}</h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
 								<span class="tag">创意</span>
 								<span class="tag">灵感</span>
 							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span><$bo.common>评论</span>
-								<span><$bo.hot>收藏</span>
-								<span><$bo.likes>点赞</span></p>
+							<p class="card-data"><span>{$bo.common}评论</span>
+								<span>{$bo.hot}收藏</span>
+								<span>{$bo.likes}点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
 								<img src="__IMG__logo.jpg" > 
