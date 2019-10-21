@@ -24,10 +24,10 @@ class Index extends Controller{
         
         $blog = new \app\index\controller\Blog();
         $blog->getHotBlog();
+        $blog->getSugBlog();
         //cache('hot_blog',null);
         //dump(cache('hot_blog'));
         //var_dump($s) ;
-
         return $this->fetch('index');
         
     }

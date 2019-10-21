@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-10-21 14:32:38
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-21 16:31:52
+ * @Last Modified time: 2019-10-21 16:43:47
  */
 namespace app\index\controller;
 
@@ -19,7 +19,7 @@ class Blog extends Controller{
         $aid=$request->param('aid');
         $res = model('Blog')->getById($aid);
         //dump($res);
-        
+
         $this->assign('blog',$res);
         return $this->fetch('index/detail');
     }
@@ -39,6 +39,18 @@ class Blog extends Controller{
         return $hot;
     }
     /**
-    *	首页文章展示8篇
+    *	首页推荐文章展示8篇
     */
+    public function getSugBlog()
+    {
+        # code...
+        $sug = cache('sug_blog');
+        if (!$sug) {
+            //echo "111111111";
+            $hot =model('Blog')->getSugBlog();
+            cache('sug_blog',$sug);
+        }
+        $this->assign('sug_blog',$sug);
+        return $sug;
+    }
 }

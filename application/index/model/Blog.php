@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-10-21 14:38:08
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-21 16:32:44
+ * @Last Modified time: 2019-10-21 16:47:42
  */
 namespace app\index\model;
 
@@ -19,6 +19,14 @@ class Blog extends Model
         $res = $this->order('hot desc')->limit(3)->select();
         $res = json_decode(json_encode($res),true);
         //dump($res);
+        return $res;
+    }
+
+    public function getSugBlog()
+    {   
+        $res = $this->order('hot desc')->limit(4,11)->select();
+        $res = json_decode(json_encode($res),true);
+        dump($res);
         return $res;
     }
 

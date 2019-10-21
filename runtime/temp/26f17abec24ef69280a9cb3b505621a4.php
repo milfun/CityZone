@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571645999;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571638594;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571646979;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570867764;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571647765;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571638594;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571646979;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570867764;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -100,175 +100,28 @@
 			<div class="pick-list">
 				<h2>Editor's Pick 编辑推荐</h2>
 				<ul class="">
+					<?php if(is_array($sug_blog) || $sug_blog instanceof \think\Collection || $sug_blog instanceof \think\Paginator): $i = 0; $__LIST__ = $sug_blog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$su): $mod = ($i % 2 );++$i;?>
 						<li class="card">
-							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<a href="<?php echo urm('blog',['aid'=>$su['aid']]); ?>"><img class="card-img" src="<?php echo $su['imgurl']; ?>"></a>
+							<a href=""><h3 class="card-tit"><?php echo $su['aname']; ?></h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
 								<span class="tag">创意</span>
 								<span class="tag">灵感</span>
 							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
+							<p class="card-data"><span><?php echo $su['common']; ?>评论</span>
+								<span><?php echo $su['host']; ?>人气</span>
+								<span><?php echo $su['likes']; ?>点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
 								<img src="http://milfun.com/public/static/img/logo.jpg" > 
 								<div class="card-info">
-									<span>MilFun</span>
+									<span><?php echo $su['author']; ?></span>
 									<span class="card-time">1 小时前</span>
 								</div>
 							</p>
 						</li>
-						<li class="card">
-							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
-							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
-							<div class="bot-line"></div>
-							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
-								<div class="card-info">
-									<span>MilFun</span>
-									<span class="card-time">1 小时前</span>
-								</div>
-							</p>
-						</li>
-						<li class="card">
-							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
-							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
-							<div class="bot-line"></div>
-							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
-								<div class="card-info">
-									<span>MilFun</span>
-									<span class="card-time">1 小时前</span>
-								</div>
-							</p>
-						</li>
-						<li class="card">
-							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
-							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
-							<div class="bot-line"></div>
-							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
-								<div class="card-info">
-									<span>MilFun</span>
-									<span class="card-time">1 小时前</span>
-								</div>
-							</p>
-						</li>
-						<li class="card">
-							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
-							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
-							<div class="bot-line"></div>
-							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
-								<div class="card-info">
-									<span>MilFun</span>
-									<span class="card-time">1 小时前</span>
-								</div>
-							</p>
-						</li>
-						<li class="card">
-							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
-							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
-							<div class="bot-line"></div>
-							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
-								<div class="card-info">
-									<span>MilFun</span>
-									<span class="card-time">1 小时前</span>
-								</div>
-							</p>
-						</li>
-						<li class="card">
-							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
-							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
-							<div class="bot-line"></div>
-							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
-								<div class="card-info">
-									<span>MilFun</span>
-									<span class="card-time">1 小时前</span>
-								</div>
-							</p>
-						</li>
-						<li class="card">
-							<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-							<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
-							</p>
-							<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-							<p class="card-data"><span>0评论</span>
-								<span>3收藏</span>
-								<span>3点赞</span></p>
-							<div class="bot-line"></div>
-							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
-								<div class="card-info">
-									<span>MilFun</span>
-									<span class="card-time">1 小时前</span>
-								</div>
-							</p>
-						</li>
-						
+					<?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
 			</div>
 			<p class="more"><a href="" class="link-more">更多活动</a></p>
