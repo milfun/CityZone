@@ -13,8 +13,8 @@ use think\Route;
 
 Route::rule('/','index/index/index');
 Route::rule('blog/:aid','index/blog/index','get',[],[]);
-Route::rule('jobs/:jid','index/index/jobs','get',[],[]);
-Route::rule('companys/','index/index/companys','get',[],[]);
+Route::rule('mark/','index/mark/index','get',[],[]);
+Route::rule('mark/:addblog','index/mark/addblog','post',[],[]);
 Route::rule('resumes/','index/index/resumes','get',[],[]);
 /*
 return [

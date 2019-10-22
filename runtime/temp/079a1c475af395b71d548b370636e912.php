@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1571646926;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571638594;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571646979;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570867764;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1571713529;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571711869;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571712268;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,10 +9,12 @@
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<title>最适合你的知识分享平台</title>
+
+	
+<link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/sspai.css" />
+<title>米饭联盟-<?php echo $blog['aname']; ?></title>
 </head>
 <body>
-	
 <div class="docker header">
 		<div class="inner">
 			<!---->
@@ -22,7 +24,7 @@
 					<a href="" class="nav-link">发现</a>
 					<a href="" class="nav-link">有聊</a>
 					<a href="" class="nav-link">活动</a>
-					<a href="" class="nav-link">未知商店</a>
+					<a href="" class="nav-link">未知领域</a>
 					<a href="" class="nav-link">Zone学院</a>
 				</div>
 				<!---->
@@ -92,13 +94,12 @@
 					
 				</div>
 			</div>
-			<div class="clear"></div>
 			<!-- 作者信息 -->
 			<div class="article-info">
 				<img src="http://milfun.com/public/static/img/logo.jpg">
 				<div class="article-auth">
 					<p class="auth-name"><?php echo $blog['author']; ?><i class="vip-icon"></i></p>
-					<p class="auth-desc">北京 | 广告营销/文化娱乐</p>
+					<p class="auth-desc">福建 | 程序猿/最爱黑科技</p>
 				</div>
 				
 				<a href="" class="btn article-focus">关注</a>
@@ -119,7 +120,32 @@
 				<div class="inner">
 					<div class="">
 						<h2>Editor's Pick 编辑推荐</h2>
+						<div class="clear"></div>
 						<ul class="">
+							<li class="card">
+									<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
+									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+									<p class="card-tag">
+										<span class="tag">品牌</span>
+										<span class="tag">创意</span>
+										<span class="tag">灵感</span>
+										<span class="tag">品牌</span>
+										<span class="tag">创意</span>
+										<span class="tag">灵感</span>
+									</p>
+									
+									<p class="card-data"><span>0评论</span>
+										<span>3收藏</span>
+										<span>3点赞</span></p>
+									<div class="bot-line"></div>
+									<p class="card-auth">
+										<img src="http://milfun.com/public/static/img/logo.jpg" > 
+										<div class="card-info">
+											<span>MilFun</span>
+											<span class="card-time">1 小时前</span>
+										</div>
+									</p>
+								</li>
 								<li class="card">
 									<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
 									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
@@ -131,7 +157,7 @@
 										<span class="tag">创意</span>
 										<span class="tag">灵感</span>
 									</p>
-									<p class="card-desc">以国际设计语言塑造品牌领导力</p>
+									
 									<p class="card-data"><span>0评论</span>
 										<span>3收藏</span>
 										<span>3点赞</span></p>
@@ -243,11 +269,10 @@
 				<a href="" class="foot-link">商户入驻</a>
 				<a href="" class="foot-link">免责申明</a>
 			</p>
-			<p  class="foot-info">  闽ICP备010000000号
-				<span>MilFun.Fun </span>
-				<span></span>
-				<span>2003-2019 ALL RIGHTS RESERVED.</span>
-				<span>福清市米饭联盟有限公司</span>
+			<p  class="foot-info">
+				<span><?php echo config('copy_right'); ?></span>
+				
+				<span>怪兽研习社</span>
 			</p>
 			
 		</div>

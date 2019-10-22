@@ -7,32 +7,36 @@ body {
 	font-family: Helvetica, Arial, "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "tohoma,sans-serif";
 	margin: 0;
 }
-h1 {
+article{
+	display: block;
+	width: 100%;
+}
+article h1 {
 	font-size: 2.2em;
 	font-weight: 700;
 	line-height: 1.1;
 	padding-top: 16px;
 	margin-bottom: 4px;
 }
-h2, h3, h4, h5, h6 {
+article h2,article  h3,article  h4,article  h5,article  h6 {
 	line-height: 1.5em;
 	margin-top: 2.2em;
 	margin-bottom: 4px;
 }
-h2 {
+article h2 {
 	font-size: 1.4em;
 	margin: 40px 10px 20px 0;
 	font-weight: 700;
 	line-height: 1.4;
 }
-h3 {
+article h3 {
 	font-weight: 700;
 	font-size: 1.2em;
 	line-height: 1.4;
 	margin: 10px 0 5px;
 	padding-top: 10px;
 }
-h4 {
+article h4 {
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 1.1em;
@@ -40,52 +44,52 @@ h4 {
 	margin: 10px 0 5px;
 	padding-top: 10px
 }
-h5, h6 {
+article h5, h6 {
 	font-size: .9em;
 }
-h5 {
+article h5 {
 	font-weight: bold;
 	text-transform: uppercase;
 }
-h6 {
+article h6 {
 	font-weight: normal;
 	color: #AAA;
 }
-#result img {
+article img {
 	border-radius: 5px;
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 15px;
 	height: auto;
 }
-dl, ol, ul {
+article dl,article  ol,article  ul {
 	margin-top: 12px;
 	margin-bottom: 20px;
 	padding-left: 5%;
 	line-height: 1.8;
 }
-p {
+article p {
 	margin: 0 0 20px;
 	padding: 0;
 	line-height: 1.8;
 	text-align: left;
 }
-a {
+article a {
 	padding: 0 10px;
 	color: #20dcc2;
 	text-decoration: none;
 }
-a:hover {
+article a:hover {
 	color: #f55852;
 	text-decoration: underline;
 }
-a:focus {
+article a:focus {
 	outline-offset: -2px;
 }
-blockquote {
+article blockquote {
 	font-size: 1em;
 	font-style: normal;
-	padding: 0 38px;
+	padding: 10px 38px;
 	margin: 0 0 15px;
 	position: relative;
 	line-height: 2.0;
@@ -95,14 +99,14 @@ blockquote {
 	background: #f9f9f9;
 	border-left: 6px solid #E0E0E0;
 }
-strong, dfn {
+article strong,article  dfn {
 	font-weight: 700;
 }
-em, dfn {
+article em,article  dfn {
 	font-style: italic;
 	font-weight: 400;
 }
-del {
+article del {
 	text-decoration: line-through;
 }
 /*code {font-size:90%;}*/
@@ -137,8 +141,9 @@ code {
 	font-size: 90%;
 	text-align: left;
 }
-p>code {
+ p>code {
 	padding: 0 10px;
+	margin: 0 10px;
 	color: #FFF;
 	background-color: #1f1f1f;
 	font-size: .95em;
@@ -146,31 +151,31 @@ p>code {
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 }
-figure {
+article figure {
 	margin: 1em 0;
 }
-figcaption {
+article figcaption {
 	font-size: 0.75em;
 	padding: 0.5em 2em;
 	margin-bottom: 2em;
 }
-figure img {
+article figure img {
 	margin-bottom: 0px;
 }
-hr {
+article hr {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border: 0;
 	border-top: 1px solid #eee;
 }
-ol p, ul p {
+article ol p,article  ul p {
 	margin-bottom: 0px;
 }
-li {
+article li {
 	margin-bottom: 0.75em;
 	margin-top: 0.75em;
 }
-ol#footnotes {
+article ol#footnotes {
 	font-size: 0.95em;
 	padding-top: 1em;
 	margin-top: 1em;
@@ -182,14 +187,14 @@ ol#footnotes {
 	padding-left: 5%;
 	margin: 20px 0;
 }
-ol#footnotes li {
+article ol#footnotes li {
 	margin-bottom: 10px;
 	margin-left: 16px;
 	font-weight: 400;
 	line-height: 2;
 	list-style-type: none;
 }
-ol#footnotes li:before {
+article ol#footnotes li:before {
 	content: counter(footer-counter) ". ";
 	counter-increment: footer-counter;
 	font-weight: 800;
@@ -217,7 +222,7 @@ ol#footnotes li:before {
 		background-color: none;
 	}
 }
-a:target, ol#footnotes li:target, sup a:target {
+article a:target,article  ol#footnotes article  li:target,article  sup a:target {
 	animation-name: highfade;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
@@ -227,21 +232,21 @@ a:target, ol#footnotes li:target, sup a:target {
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-timing-function: ease-in-out;
 }
-a:target {
+article a:target {
 	border: 0;
 	outline: 0;
 }
 animation-iteration-count: 1;
 -webkit-animation-timing-function: ease-in-out;
 }
-a:target {
+article a:target {
 	border: 0;
 	outline: 0;
 }
 tion-iteration-count: 1;
 -webkit-animation-timing-function: ease-in-out;
 }
-a:target {
+article a:target {
 	border: 0;
 	outline: 0;
 }
@@ -271,12 +276,10 @@ a:target {
 }
 	#result{
 		display:block;
+		float: right;
 		padding: 30px;
-		width: 90%;
+		width: 100%;
 		text-align: left;
 		margin: 0 auto;
 		box-shadow: 0 1px 8px rgba(0,0,0,.06);
 	}
-.article-info{
-	height: 200px;
-}

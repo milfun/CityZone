@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571647765;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571638594;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571646979;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1570867764;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571713644;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571711869;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571712268;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,10 +9,11 @@
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<title>最适合你的知识分享平台</title>
+
+	
+<title>米饭联盟-最适合你的知识分享博客</title>
 </head>
 <body>
-	
 <div class="docker header">
 		<div class="inner">
 			<!---->
@@ -22,7 +23,7 @@
 					<a href="" class="nav-link">发现</a>
 					<a href="" class="nav-link">有聊</a>
 					<a href="" class="nav-link">活动</a>
-					<a href="" class="nav-link">未知商店</a>
+					<a href="" class="nav-link">未知领域</a>
 					<a href="" class="nav-link">Zone学院</a>
 				</div>
 				<!---->
@@ -45,12 +46,11 @@
 		<div class="inner">
 			<div class="content">
 				<!---->
-				<div class="swiper"></div>
+				<a href=""><div class="swiper"></div></a>
+				
 				<!---->
 				<h2>Featured Video 灵感视频</h2>
-				<div class="left-bar">
-					
-					<ul class="">
+				<ul class="">
 					<?php if(is_array($hot_blog) || $hot_blog instanceof \think\Collection || $hot_blog instanceof \think\Paginator): $i = 0; $__LIST__ = $hot_blog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$bo): $mod = ($i % 2 );++$i;?>
 						<li class="card" >
 							<a href="<?php echo urm('blog',['aid'=>$bo['aid']]); ?>" url=""><img class="card-img" src="<?php echo $bo['imgurl']; ?>"></a>
@@ -74,9 +74,10 @@
 						</li>
 					<?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
-
+					<!--
+				<div class="left-bar">
 				</div>
-				<!---->
+				
 				<div class="right-bar">
 					<div class="box reg">
 						<h3>大风帆股份但是</h3>
@@ -86,7 +87,7 @@
 							<span>快来测试一下吧</span>
 						</div>
 					</div>
-				</div>
+				</div>-->
 
 			</div>
 			
@@ -110,7 +111,7 @@
 								<span class="tag">灵感</span>
 							</p>
 							<p class="card-data"><span><?php echo $su['common']; ?>评论</span>
-								<span><?php echo $su['host']; ?>人气</span>
+								<span><?php echo $su['hot']; ?>人气</span>
 								<span><?php echo $su['likes']; ?>点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
@@ -124,7 +125,7 @@
 					<?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
 			</div>
-			<p class="more"><a href="" class="link-more">更多活动</a></p>
+			<p class="more"><a href="" class="link-more">更多精彩</a></p>
 		</div>
 		
 	</div>
@@ -170,11 +171,10 @@
 				<a href="" class="foot-link">商户入驻</a>
 				<a href="" class="foot-link">免责申明</a>
 			</p>
-			<p  class="foot-info">  闽ICP备010000000号
-				<span>MilFun.Fun </span>
-				<span></span>
-				<span>2003-2019 ALL RIGHTS RESERVED.</span>
-				<span>福清市米饭联盟有限公司</span>
+			<p  class="foot-info">
+				<span><?php echo config('copy_right'); ?></span>
+				
+				<span>怪兽研习社</span>
 			</p>
 			
 		</div>

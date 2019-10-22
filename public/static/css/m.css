@@ -2,7 +2,7 @@
 * @Author: MilFun
 * @Date:   2019-09-04 14:35:58
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-21 15:05:06
+* @Last Modified time: 2019-10-22 11:47:08
 */
 @charset "UTF-8";
 html, body, div, h1, h2, h3, h4, h5, h6, p, span, img, input, textarea, ul, ol, li, hr,form {margin: 0;padding: 0;    -webkit-text-size-adjust: none;}
@@ -181,6 +181,7 @@ nav{
     width: 100%;
     height: 200px;
     border: 1px solid #edeeee;
+    background: url(../img/bg1.jpg);
     box-shadow: 0 1px 8px rgba(0,0,0,.06);
 }
 .left-bar{
@@ -235,15 +236,23 @@ nav{
 
 .card{
     display: inline-block;
-    width: 230px;
+    width: 200px;
     height: 300px;
-    margin-right: 20px;
     margin-top: 20px;
-    text-align: left;
-    border: 1px solid #edeeee;
+    margin: 10px 5px;
+    /*border: 1px solid #edeeee;*/
     border-radius: 10px;
     box-shadow: 0 1px 8px rgba(0,0,0,.06);
     
+}
+
+.card:nth-child(4n-3){
+    margin-right: 15px;
+    float: left;
+}
+.card:nth-child(4n){
+    margin-left: 15px;
+    float: right;
 }
 .card a{
     color: #333;
@@ -324,28 +333,28 @@ nav{
 /***********************************************/
 article{
     display: block;
+    margin: 0 auto;
     text-align: center;
 }
 article img{
-    width: 100%;
+   width: 100%;
 }
 article p{
     display: block;
     line-height: 30px;
-    max-width: 760px;
     margin: 0 auto;
     font-size: 15px;
     color: #4a4a4a;
     text-align: left;
 }
 .article-head{
-    height: 200px;
+    height: 150px;
     margin-top: 20px;
     padding: 20px 0;
 }
 .article-head h1{
     color: #1d2129;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 42px;
     font-family: inherit;
     font-weight: 500;
@@ -369,7 +378,8 @@ article p{
 .article-tool{
     display: inline-block;
     float: left;
-    width: 160px;
+    width: 50px;
+    padding-right: 50px;
 }
 .share-btn{
     display: inline-block;
@@ -452,19 +462,19 @@ background-size: 30px;background-repeat: no-repeat;
 .article-content{
     display: inline-block;
     float: left;
-    width:  760px;
+    width:  860px;
 
 }
 .article-else{
     display: inline-block;
     float: left;
-    width: 160px;
+    /*width: 160px;*/
 }
 
 .article-info{
     display: inline-block;
     height: 80px;
-    width: 760px;
+    width: 860px;
     margin: 10px 0;
     text-align: left;
     vertical-align: middle;
@@ -665,7 +675,7 @@ background-size: 30px;background-repeat: no-repeat;
 }
 .sign-cont{
     position: absolute;
-    width: 760px;
+    width: 860px;
     min-height: 514px;
     top: 50%;
     left: 50%;

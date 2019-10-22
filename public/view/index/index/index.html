@@ -1,4 +1,7 @@
 {include file="/common/header" /}
+<title>米饭联盟-最适合你的知识分享博客</title>
+</head>
+<body>
 {include file="/common/nav" /}	
 
 	<!---->
@@ -6,12 +9,11 @@
 		<div class="inner">
 			<div class="content">
 				<!---->
-				<div class="swiper"></div>
+				<a href=""><div class="swiper"></div></a>
+				
 				<!---->
 				<h2>Featured Video 灵感视频</h2>
-				<div class="left-bar">
-					
-					<ul class="">
+				<ul class="">
 					{volist name="hot_blog" id="bo"}
 						<li class="card" >
 							<a href="{:urm('blog',['aid'=>$bo.aid])}" url=""><img class="card-img" src="{$bo.imgurl}"></a>
@@ -35,9 +37,10 @@
 						</li>
 					{/volist}
 					</ul>
-
+					<!--
+				<div class="left-bar">
 				</div>
-				<!---->
+				
 				<div class="right-bar">
 					<div class="box reg">
 						<h3>大风帆股份但是</h3>
@@ -47,7 +50,7 @@
 							<span>快来测试一下吧</span>
 						</div>
 					</div>
-				</div>
+				</div>-->
 
 			</div>
 			
@@ -71,7 +74,7 @@
 								<span class="tag">灵感</span>
 							</p>
 							<p class="card-data"><span>{$su.common}评论</span>
-								<span>{$su.host}人气</span>
+								<span>{$su.hot}人气</span>
 								<span>{$su.likes}点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
@@ -85,7 +88,7 @@
 					{/volist}
 					</ul>
 			</div>
-			<p class="more"><a href="" class="link-more">更多活动</a></p>
+			<p class="more"><a href="" class="link-more">更多精彩</a></p>
 		</div>
 		
 	</div>

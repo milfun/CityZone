@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\markdown.html";i:1571637925;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571638594;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571034594;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\markdown.html";i:1571713588;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571711869;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,12 +9,12 @@
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<title>最适合你的知识分享平台</title>
-</head>
-<body>
+
 	
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/sspai.css" />
-
+<title>米饭联盟-MarkDown在线编辑器</title>
+</head>
+<body>
 <div class="docker header">
 		<div class="inner">
 			<!---->
@@ -24,7 +24,7 @@
 					<a href="" class="nav-link">发现</a>
 					<a href="" class="nav-link">有聊</a>
 					<a href="" class="nav-link">活动</a>
-					<a href="" class="nav-link">未知商店</a>
+					<a href="" class="nav-link">未知领域</a>
 					<a href="" class="nav-link">Zone学院</a>
 				</div>
 				<!---->
@@ -34,7 +34,7 @@
 				<!---->
 				<div class="nav-info">
 					
-					<a href="http://milfun.com/Index/index/login.html" class="btn login">注册/登陆</a>
+					<!--<a href="http://milfun.com/Index/index/login.html" class="btn login">注册/登陆</a>-->
 				</div>
 				
 		</nav>
@@ -65,13 +65,18 @@
 					</div>
 
 					<!--设置展示的div添加id-->
-				    <div id="result" ></div>
+				    
+				    	<article id="result">
+				    		
+
+				    	</article>
+				    
 
 				    <div id="tool">
 				    	<p>MilFun文章编辑器</p>
 				    	<!--设置id为oriContent，如果想实现实时更新，使用onkeyup方法-->
 				    	 <textarea id="MilFun" placeholder="请输入文章内容" onkeyup="convert()"></textarea>
-				    	  <a href="" class="link-more">提交信息</a>
+				    	  <a href="jacascript:;" class="link-more">提交信息</a>
 				    </div>
 				    
 				   
@@ -87,8 +92,11 @@
 		<!-- Tips End-->
 
 </div>
-
-<script type="text/javascript" src="http://milfun.com/public/static/js/showdown.min.js"></script>
+<script type="text/javascript" src="http://milfun.com/public/static/js/milfun.js"></script>
+<script>
+	var jsList = ["showdown.min","commit"]
+	var mi = new Milfun(jsList);
+</script>
 <script>
 
 var html,text,onverter 
@@ -98,5 +106,10 @@ function convert(){
     html = converter.makeHtml(text);
     $("#result").html(html) ;
 }
+
+$(".link-more").click(function(){
+    co.getAll();
+});
+
 </script>
 
