@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571794331;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571711869;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571794148;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571794331;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571800585;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571800554;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +28,7 @@
 				</div>
 				<!---->
 				<div class="nav-logo">
-					<a href="http://milfun.com/index.php"><img src="http://milfun.com/public/static/img/zone-logo.png"></a>
+					<a href="http://mp.milfun.fun/"><img src="http://milfun.com/public/static/img/zone-logo.png"></a>
 				</div>
 				<!---->
 				<div class="nav-info">
@@ -176,10 +176,10 @@
 	<div class="docker footer">
 		<div class="inner">
 			<p class="foot-doc">
-				<a href="http://milfun.com/blog/f27c80b9cd63c452018a34611fd2bbb00b92413d.html" class="foot-link">关于我们</a>
+				<a href="http://mp.milfun.fun/blog/f27c80b9cd63c452018a34611fd2bbb00b92413d.html" class="foot-link">关于我们</a>
 				<a href="" class="foot-link">广告服务</a>
 				<a href="" class="foot-link">商户入驻</a>
-				<a href="http://milfun.com/blog/65dc2a6b67f0b42bd9c7ab9dd6cf71902bf3fc76.html" class="foot-link">免责申明</a>
+				<a href="http://mp.milfun.fun/blog/65dc2a6b67f0b42bd9c7ab9dd6cf71902bf3fc76.html" class="foot-link">免责申明</a>
 			</p>
 			<p  class="foot-info">
 				<span><?php echo config('copy_right'); ?></span>

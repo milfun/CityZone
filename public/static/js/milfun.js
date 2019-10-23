@@ -2,11 +2,11 @@
 * @Author: MilFun
 * @Date:   2019-10-12 15:18:20
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-12 16:50:30
+* @Last Modified time: 2019-10-23 11:15:22
 */
 class Milfun {
   constructor(list) {
-  	this.path= 'http://localhost/cityzone/public/static/js/';
+  	this.path= 'http://mp.milfun.fun/public/static/js/';
   	this.init(list,this.path);
   }
 

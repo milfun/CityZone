@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-10-21 14:38:08
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-23 09:42:43
+ * @Last Modified time: 2019-10-23 11:30:30
  */
 namespace app\index\model;
 
@@ -51,12 +51,17 @@ class Blog extends Model
     {
         # code...
         $data['aid'] = sha1($param['acontent']);
-        $data['imgurl'] = 'http://milfun.fun/s/blog/img/logo.jpg';
+        if ($param['img']=='') {
+            $data['imgurl'] = 'http://milfun.fun/s/blog/img/logo.jpg';
+        }else{
+            $data['imgurl'] = $param['img'];
+        }
+        
         $data['author'] = 'MilFun';
         $data['acontent'] = $param['acontent'];
         $data['aname'] = $param['aname'];
         $data['caterogy'] = $param['caterogy'];
-        $data['imgurl'] = $param['img'];
+        
         $data['tag'] = $param['tag'];
         $data['add_time'] = time();
         //dump($data);

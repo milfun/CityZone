@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-10-21 14:32:38
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-23 08:59:27
+ * @Last Modified time: 2019-10-23 14:09:20
  */
 namespace app\index\controller;
 
@@ -29,6 +29,8 @@ class Blog extends Controller{
     public function index()
     {
         # code...
+        ini_set('display_errors','on');
+error_reporting(E_ALL);
         $request = request();
         $aid=$request->param('aid');
         $res = model('Blog')->getById($aid);
