@@ -2,7 +2,7 @@
 * @Author: MilFun
 * @Date:   2019-10-12 15:16:24
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-23 11:15:36
+* @Last Modified time: 2019-10-23 15:51:40
 */
 class commit {
 
@@ -33,4 +33,4 @@ class commit {
       });
   }
 }
-let co =new commit();
+var co =new commit();

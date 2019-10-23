@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571794331;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571800585;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571800554;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571794331;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571818792;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571800585;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571800554;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
 <meta http-equiv="pragma" content="no-cache"> 
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
-<link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
+<link rel="stylesheet" type="text/css" href="http://mp.milfun.fun/public/static/css/m.css" />
+<!-- mp.milfun.fun Baidu tongji analytics 
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1960d8c3de82fbf1ab940da7e1b54b1c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script data-ad-client="ca-pub-1697853909276978" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+-->
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 
 	
@@ -28,7 +41,7 @@
 				</div>
 				<!---->
 				<div class="nav-logo">
-					<a href="http://mp.milfun.fun/"><img src="http://milfun.com/public/static/img/zone-logo.png"></a>
+					<a href="http://mp.milfun.fun/"><img src="http://mp.milfun.fun/public/static/img/zone-logo.png"></a>
 				</div>
 				<!---->
 				<div class="nav-info">
@@ -63,7 +76,7 @@
 								<span><?php echo $bo['likes']; ?>点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
+								<img src="http://mp.milfun.fun/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -81,7 +94,7 @@
 						<h3>大风帆股份但是</h3>
 						<div class="box-cont">
 							<span>快来测试一下吧</span>
-							<img src="http://milfun.com/public/static/img/five-graph.png">
+							<img src="http://mp.milfun.fun/public/static/img/five-graph.png">
 							<span>快来测试一下吧</span>
 						</div>
 					</div>
@@ -113,7 +126,7 @@
 								<span><?php echo $su['likes']; ?>点赞</span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
+								<img src="http://mp.milfun.fun/public/static/img/logo.jpg" > 
 								<div class="card-info">
 									<span><?php echo $su['author']; ?></span>
 									<span class="card-time">1 小时前</span>
@@ -163,7 +176,7 @@
 				<span title="微博"><i class="sbtn sb-msg"></i>聊天</span>
 				<span title="微信"><i class="sbtn sb-phone "></i>电话
 					<div class="code">
-						<img src="http://milfun.com/public/static/img/qrcode.jpg" class="qrcode">
+						<img src="http://mp.milfun.fun/public/static/img/qrcode.jpg" class="qrcode">
 						<p>扫码关注微信公众号</p>
 						<p>随时随地 灵感一下</p>
 					</div>

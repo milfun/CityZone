@@ -9197,3 +9197,41 @@
   1 => 'sug_blog',
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T16:20:02+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.795461s][吞吐率：1.26req/s] [内存消耗：4,459.57kb] [文件加载：49]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.157016s ] mysql:host=bdm257366249.my3w.com;port=3306;dbname=bdm257366249_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.104916s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `type` = '1' ORDER BY `hot` DESC LIMIT 5 [ RunTime:0.210724s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `type` = '1' ORDER BY `add_time` DESC LIMIT 10 [ RunTime:0.263949s ]

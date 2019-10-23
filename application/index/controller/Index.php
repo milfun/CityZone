@@ -34,10 +34,10 @@ class Index extends Controller{
 
   
 
-    public function login()
+    public function _404()
     {
         # code...
-        return $this->fetch('login');
+        return $this->fetch('404');
     }
     public function detail()
     {
