@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571713644;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571711869;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571712268;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571794331;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571711869;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571794148;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,9 +56,7 @@
 							<a href="<?php echo urm('blog',['aid'=>$bo['aid']]); ?>" url=""><img class="card-img" src="<?php echo $bo['imgurl']; ?>"></a>
 							<a href=""><h3 class="card-tit"><?php echo $bo['aname']; ?></h3></a>
 							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
+								<span class="tag"><?php echo $bo['tag']; ?></span>
 							</p>
 							<p class="card-data"><span><?php echo $bo['common']; ?>评论</span>
 								<span><?php echo $bo['hot']; ?>收藏</span>
@@ -128,7 +126,19 @@
 			<p class="more"><a href="" class="link-more">更多精彩</a></p>
 		</div>
 		
+		<!--广告-->
+		<div class="docker">
+			<div class="inner">
+				<!--保留块-->
+				<div class="keep">
+				
+				</div>
+			</div>
+		</div>
+		<!--广告 END -->
+
 	</div>
+
 
 	<!--
 	<div class="docker list">
@@ -166,10 +176,10 @@
 	<div class="docker footer">
 		<div class="inner">
 			<p class="foot-doc">
-				<a href="" class="foot-link">关于我们</a>
+				<a href="http://milfun.com/blog/f27c80b9cd63c452018a34611fd2bbb00b92413d.html" class="foot-link">关于我们</a>
 				<a href="" class="foot-link">广告服务</a>
 				<a href="" class="foot-link">商户入驻</a>
-				<a href="" class="foot-link">免责申明</a>
+				<a href="http://milfun.com/blog/65dc2a6b67f0b42bd9c7ab9dd6cf71902bf3fc76.html" class="foot-link">免责申明</a>
 			</p>
 			<p  class="foot-info">
 				<span><?php echo config('copy_right'); ?></span>

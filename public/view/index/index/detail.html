@@ -9,13 +9,23 @@
 		<div class="inner">
 			
 			<!--保留块-->
-			<div class="keep"></div>
+			<div class="keep">
+				
+			</div>
 			<!--文章顶部信息-->
 			<div class="article-head">
+				<div class="bread">
+					当前位置：<a href="http://milfun.com/index.php">首页</a>
+					>><a href="">{$blog.caterogy}</a> 
+					>> <a href="">{$blog.aname}</a> 
+
+					<span class="bread-time">{$blog.add_time|}</span>
+				</div>
+				
+				<h1>{$blog.aname}</h1>
 				<p class="category">
 					<a class="" href="" >{$blog.caterogy}</a>
 				</p>
-				<h1>{$blog.aname}</h1>
 				<p class="article-tag">
 					<span class="tag">品牌</span>
 					<span class="tag">创意</span>

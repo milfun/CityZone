@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-10-21 14:38:08
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-22 10:35:33
+ * @Last Modified time: 2019-10-23 09:42:43
  */
 namespace app\index\model;
 
@@ -20,7 +20,8 @@ class Blog extends Model
     //首页热门3篇博客
     public function getHotBlog()
     {   
-        $res = $this->order('hot desc')->limit(5)->select();
+        $map['type'] = 1;
+        $res = $this->where($map)->order('hot desc')->limit(5)->select();
         $res = json_decode(json_encode($res),true);
         //dump($res);
         return $res;
@@ -28,7 +29,8 @@ class Blog extends Model
     //首页推荐8篇博客
     public function getSugBlog()
     {   
-        $res = $this->order('add_time desc')->limit(10)->select();
+        $map['type'] = 1;
+        $res = $this->where($map)->order('add_time desc')->limit(10)->select();
         $res = json_decode(json_encode($res),true);
         //dump($res);
         return $res;
@@ -38,8 +40,8 @@ class Blog extends Model
     public function getById($aid)
     {
     	# code...
-    	$where['aid'] = $aid;
-    	$res = $this->where($where)->find();
+    	$map['aid'] = $aid;
+        $res = $this->where($map)->find();
         //dump($res);
         $res = json_decode(json_encode($res),true);
         return $res;
@@ -54,6 +56,7 @@ class Blog extends Model
         $data['acontent'] = $param['acontent'];
         $data['aname'] = $param['aname'];
         $data['caterogy'] = $param['caterogy'];
+        $data['imgurl'] = $param['img'];
         $data['tag'] = $param['tag'];
         $data['add_time'] = time();
         //dump($data);
@@ -70,6 +73,11 @@ class Blog extends Model
    	{
    		return htmlspecialchars_decode($value);
    	}
+    //获取器
+    public function getAddTimeAttr($value)
+    {
+        return date('Y-m-d h:i:s',$value);
+    }
 
 
 }

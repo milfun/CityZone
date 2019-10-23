@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-10-21 14:32:38
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-22 10:48:11
+ * @Last Modified time: 2019-10-23 08:59:27
  */
 namespace app\index\controller;
 
@@ -44,6 +44,7 @@ class Blog extends Controller{
     {
         # code...
         $hot = cache('hot_blog');
+        cache('hot_blog',null);
         if (!$hot) {
             //echo "111111111";
             $hot =model('Blog')->getHotBlog();

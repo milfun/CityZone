@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\markdown.html";i:1571713588;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571711869;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\markdown.html";i:1571793199;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571711869;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,6 +61,9 @@
 							<span class="tag">品牌</span>
 							<span class="tag">创意</span>
 							<span class="tag">灵感</span>
+						</p>
+						<p class="" contenteditable="true">
+							<span id="article-imgurl" class="tag">http://milfun.com/mark</span>
 						</p>
 					</div>
 

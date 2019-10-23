@@ -15,6 +15,10 @@ Route::rule('/','index/index/index');
 Route::rule('blog/:aid','index/blog/index','get',[],[]);
 Route::rule('mark/','index/mark/index','get',[],[]);
 Route::rule('mark/:addblog','index/mark/addblog','post',[],[]);
+Route::rule('topic/','index/topic/index','get',[],[]);
+Route::rule('discover/','index/discover/index','get',[],[]);
+Route::rule('event/','index/event/index','get',[],[]);
+Route::rule('mind/','index/mind/index','get',[],[]);
 Route::rule('resumes/','index/index/resumes','get',[],[]);
 /*
 return [
