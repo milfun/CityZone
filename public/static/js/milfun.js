@@ -2,11 +2,11 @@
 * @Author: MilFun
 * @Date:   2019-10-12 15:18:20
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-23 15:47:15
+* @Last Modified time: 2019-10-24 17:03:51
 */
 class Milfun {
   constructor(list) {
-  	this.path= 'http://mp.milfun.fun/public/static/js/';
+  	this.path= 'https://mp.milfun.fun/public/static/js/';
   	this.init(list,this.path);
   }
 
