@@ -5055,3 +5055,1298 @@
   1 => 'sug_blog',
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T12:29:09+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.041993s][吞吐率：23.81req/s] [内存消耗：4,232.82kb] [文件加载：48]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571975411',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001035s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003707s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `type` = '1' ORDER BY `hot` DESC LIMIT 5 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `type` = '1' ORDER BY `add_time` DESC LIMIT 10 [ RunTime:0.000771s ]
+---------------------------------------------------------------
+[ 2019-10-25T12:29:10+08:00 ] 127.0.0.1 GET /blog/96ed724e32ce89a7702261c93a110b9681658c9d.html
+[ info ] milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html [运行时间：0.029812s][吞吐率：33.54req/s] [内存消耗：3,990.72kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571977750',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '96ed724e32ce89a7702261c93a110b9681658c9d',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000614s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003665s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '96ed724e32ce89a7702261c93a110b9681658c9d' LIMIT 1 [ RunTime:0.000518s ]
+---------------------------------------------------------------
+[ 2019-10-25T12:29:22+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.017775s][吞吐率：56.26req/s] [内存消耗：2,372.83kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571977751',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T13:58:42+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.044896s][吞吐率：22.27req/s] [内存消耗：4,471.17kb] [文件加载：50]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571977763',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002499s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.004833s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `type` = '1' ORDER BY `hot` DESC LIMIT 5 [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `type` = '1' ORDER BY `add_time` DESC LIMIT 10 [ RunTime:0.000632s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:30:52+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.045395s][吞吐率：22.03req/s] [内存消耗：4,232.00kb] [文件加载：48]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001246s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003831s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `type` = '1' ORDER BY `hot` DESC LIMIT 5 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `type` = '1' ORDER BY `add_time` DESC LIMIT 10 [ RunTime:0.000505s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:31:19+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.019577s][吞吐率：51.08req/s] [内存消耗：2,373.14kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571988652; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571988652',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T15:53:04+08:00 ] 127.0.0.1 GET /blog/96ed724e32ce89a7702261c93a110b9681658c9d.html
+[ info ] milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html [运行时间：0.041141s][吞吐率：24.31req/s] [内存消耗：4,228.10kb] [文件加载：49]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571988652; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571988680',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '96ed724e32ce89a7702261c93a110b9681658c9d',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001346s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.004253s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '96ed724e32ce89a7702261c93a110b9681658c9d' LIMIT 1 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:53:05+08:00 ] 127.0.0.1 GET /blog/96ed724e32ce89a7702261c93a110b9681658c9d.html
+[ info ] milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html [运行时间：0.037313s][吞吐率：26.80req/s] [内存消耗：3,990.80kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571988652; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571989984',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '96ed724e32ce89a7702261c93a110b9681658c9d',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000784s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003227s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '96ed724e32ce89a7702261c93a110b9681658c9d' LIMIT 1 [ RunTime:0.000545s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:53:06+08:00 ] 127.0.0.1 GET /blog/96ed724e32ce89a7702261c93a110b9681658c9d.html
+[ info ] milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html [运行时间：0.033389s][吞吐率：29.95req/s] [内存消耗：3,990.80kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571988652; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571989986',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '96ed724e32ce89a7702261c93a110b9681658c9d',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000774s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.004023s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '96ed724e32ce89a7702261c93a110b9681658c9d' LIMIT 1 [ RunTime:0.001405s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:53:17+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.016451s][吞吐率：60.79req/s] [内存消耗：2,372.75kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571988652; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571989987',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T15:53:34+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.019805s][吞吐率：50.49req/s] [内存消耗：2,373.14kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571988652; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571989997',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T15:53:35+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.017407s][吞吐率：57.45req/s] [内存消耗：2,373.14kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571988652; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990015',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T15:53:35+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.015332s][吞吐率：65.22req/s] [内存消耗：2,373.14kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571988652; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990015',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T15:53:35+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.015341s][吞吐率：65.19req/s] [内存消耗：2,373.14kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571988652; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990016',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T15:53:46+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.021043s][吞吐率：47.52req/s] [内存消耗：2,372.27kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571983123',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T15:53:50+08:00 ] 127.0.0.1 GET /blog/96ed724e32ce89a7702261c93a110b9681658c9d.html
+[ info ] milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html [运行时间：0.030558s][吞吐率：32.72req/s] [内存消耗：3,990.72kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990027',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '96ed724e32ce89a7702261c93a110b9681658c9d',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001878s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003160s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '96ed724e32ce89a7702261c93a110b9681658c9d' LIMIT 1 [ RunTime:0.000357s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:53:51+08:00 ] 127.0.0.1 GET /search/11.html
+[ info ] milfun.com/search/11.html [运行时间：0.034050s][吞吐率：29.37req/s] [内存消耗：4,229.56kb] [文件加载：50]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'search',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990030',
+)
+[ info ] [ PARAM ] array (
+  'item' => '11',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->search[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\search.html [ array (
+  0 => 'search_blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000968s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003456s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `item` = 11 ORDER BY `hot` DESC [ RunTime:0.001100s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:53:58+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.015360s][吞吐率：65.10req/s] [内存消耗：2,372.75kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990032',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T15:54:06+08:00 ] 127.0.0.1 GET /blog/a2615d306ca27a0892fa05b53344e6ea89096237.html
+[ info ] milfun.com/blog/a2615d306ca27a0892fa05b53344e6ea89096237.html [运行时间：0.029129s][吞吐率：34.33req/s] [内存消耗：3,994.59kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990038',
+)
+[ info ] [ PARAM ] array (
+  'aid' => 'a2615d306ca27a0892fa05b53344e6ea89096237',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000635s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.002866s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = 'a2615d306ca27a0892fa05b53344e6ea89096237' LIMIT 1 [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:54:08+08:00 ] 127.0.0.1 GET /search/10.html
+[ info ] milfun.com/search/10.html [运行时间：0.030903s][吞吐率：32.36req/s] [内存消耗：4,021.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'search',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/blog/a2615d306ca27a0892fa05b53344e6ea89096237.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990047',
+)
+[ info ] [ PARAM ] array (
+  'item' => '10',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->search[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\search.html [ array (
+  0 => 'search_blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000699s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003109s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `item` = 10 ORDER BY `hot` DESC [ RunTime:0.000371s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:54:57+08:00 ] 127.0.0.1 GET /search/10.html
+[ info ] milfun.com/search/10.html [运行时间：0.035921s][吞吐率：27.84req/s] [内存消耗：4,245.90kb] [文件加载：50]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'search',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/blog/a2615d306ca27a0892fa05b53344e6ea89096237.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990048',
+)
+[ info ] [ PARAM ] array (
+  'item' => '10',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->search[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\search.html [ array (
+  0 => 'search_blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003572s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `item` = 10 ORDER BY `hot` DESC [ RunTime:0.000373s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:55:29+08:00 ] 127.0.0.1 GET /search/10.html
+[ info ] milfun.com/search/10.html [运行时间：0.031696s][吞吐率：31.55req/s] [内存消耗：4,022.22kb] [文件加载：48]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'search',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/blog/a2615d306ca27a0892fa05b53344e6ea89096237.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990098',
+)
+[ info ] [ PARAM ] array (
+  'item' => '10',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->search[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\search.html [ array (
+  0 => 'search_blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000647s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003073s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `item` = 10 ORDER BY `hot` DESC [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:55:30+08:00 ] 127.0.0.1 GET /search/10.html
+[ info ] milfun.com/search/10.html [运行时间：0.031725s][吞吐率：31.52req/s] [内存消耗：4,022.22kb] [文件加载：48]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'search',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/blog/a2615d306ca27a0892fa05b53344e6ea89096237.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990130',
+)
+[ info ] [ PARAM ] array (
+  'item' => '10',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->search[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\search.html [ array (
+  0 => 'search_blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000613s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003809s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `item` = 10 ORDER BY `hot` DESC [ RunTime:0.000599s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:56:03+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.018509s][吞吐率：54.03req/s] [内存消耗：2,372.75kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990131',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T15:57:00+08:00 ] 127.0.0.1 GET /blog/96ed724e32ce89a7702261c93a110b9681658c9d.html
+[ info ] milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html [运行时间：0.031583s][吞吐率：31.66req/s] [内存消耗：3,990.72kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990164',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '96ed724e32ce89a7702261c93a110b9681658c9d',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000569s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003750s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '96ed724e32ce89a7702261c93a110b9681658c9d' LIMIT 1 [ RunTime:0.001244s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:57:10+08:00 ] 127.0.0.1 GET /blog/%7BAPP_DOMAIN%7D
+[ info ] milfun.com/blog/%7BAPP_DOMAIN%7D [运行时间：0.030132s][吞吐率：33.19req/s] [内存消耗：3,976.52kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990221',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '{APP_DOMAIN}',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.002369s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '{APP_DOMAIN}' LIMIT 1 [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:57:13+08:00 ] 127.0.0.1 GET /blog/%7BAPP_DOMAIN%7D
+[ info ] milfun.com/blog/%7BAPP_DOMAIN%7D [运行时间：0.029349s][吞吐率：34.07req/s] [内存消耗：3,976.38kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/blog/%7BAPP_DOMAIN%7D',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990230',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '{APP_DOMAIN}',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000583s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.002886s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '{APP_DOMAIN}' LIMIT 1 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:57:13+08:00 ] 127.0.0.1 GET /blog/%7BAPP_DOMAIN%7D
+[ info ] milfun.com/blog/%7BAPP_DOMAIN%7D [运行时间：0.030638s][吞吐率：32.64req/s] [内存消耗：3,976.38kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/blog/%7BAPP_DOMAIN%7D',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990233',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '{APP_DOMAIN}',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003770s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '{APP_DOMAIN}' LIMIT 1 [ RunTime:0.000352s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:57:14+08:00 ] 127.0.0.1 GET /blog/%7BAPP_DOMAIN%7D
+[ info ] milfun.com/blog/%7BAPP_DOMAIN%7D [运行时间：0.029916s][吞吐率：33.43req/s] [内存消耗：3,976.38kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/blog/%7BAPP_DOMAIN%7D',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990234',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '{APP_DOMAIN}',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000726s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003076s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '{APP_DOMAIN}' LIMIT 1 [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:57:35+08:00 ] 127.0.0.1 GET /blog/96ed724e32ce89a7702261c93a110b9681658c9d.html
+[ info ] milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html [运行时间：0.036066s][吞吐率：27.73req/s] [内存消耗：4,228.02kb] [文件加载：49]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990255',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '96ed724e32ce89a7702261c93a110b9681658c9d',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000582s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.005508s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '96ed724e32ce89a7702261c93a110b9681658c9d' LIMIT 1 [ RunTime:0.000490s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:57:38+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.016500s][吞吐率：60.61req/s] [内存消耗：2,372.75kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990256',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T15:57:56+08:00 ] 127.0.0.1 GET /blog/96ed724e32ce89a7702261c93a110b9681658c9d.html
+[ info ] milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html [运行时间：0.032775s][吞吐率：30.51req/s] [内存消耗：4,227.97kb] [文件加载：49]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990258',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '96ed724e32ce89a7702261c93a110b9681658c9d',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000797s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.004985s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '96ed724e32ce89a7702261c93a110b9681658c9d' LIMIT 1 [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2019-10-25T15:57:58+08:00 ] 127.0.0.1 GET /search/11.html
+[ info ] milfun.com/search/11.html [运行时间：0.039031s][吞吐率：25.62req/s] [内存消耗：4,006.59kb] [文件加载：48]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'search',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/blog/96ed724e32ce89a7702261c93a110b9681658c9d.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990277',
+)
+[ info ] [ PARAM ] array (
+  'item' => '11',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->search[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\search.html [ array (
+  0 => 'search_blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001294s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.006216s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `item` = 11 ORDER BY `hot` DESC [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2019-10-25T16:03:22+08:00 ] 127.0.0.1 GET /index.php
+[ info ] milfun.com/index.php [运行时间：0.018010s][吞吐率：55.52req/s] [内存消耗：2,372.75kb] [文件加载：39]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990279',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html [ array (
+  0 => 'hot_blog',
+  1 => 'sug_blog',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-25T16:03:24+08:00 ] 127.0.0.1 GET /blog/3688274a2ec76297bf77f1d9424d533594e70107.html
+[ info ] milfun.com/blog/3688274a2ec76297bf77f1d9424d533594e70107.html [运行时间：0.029875s][吞吐率：33.47req/s] [内存消耗：3,993.38kb] [文件加载：47]
+[ info ] [ LANG ] D:\MilFun\Apache24\htdocs\CityZone\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'blog',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'milfun.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://milfun.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_83d7d33e2195a88dceb457d2159fd69b=1571968035; Hm_lpvt_83d7d33e2195a88dceb457d2159fd69b=1571990603',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '3688274a2ec76297bf77f1d9424d533594e70107',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Blog->index[ D:\MilFun\Apache24\htdocs\CityZone\application\index\controller\Blog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html [ array (
+  0 => 'blog',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000835s ] mysql:host=127.0.0.1;port=3306;dbname=wzdx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wz_blog` [ RunTime:0.003013s ]
+[ sql ] [ SQL ] SELECT * FROM `wz_blog` WHERE  `aid` = '3688274a2ec76297bf77f1d9424d533594e70107' LIMIT 1 [ RunTime:0.000355s ]

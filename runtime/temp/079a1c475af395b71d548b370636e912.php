@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1571973206;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571904219;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571968310;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571968422;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571823071;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1571990265;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571981346;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571968310;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571968422;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571823071;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
 <meta http-equiv="pragma" content="no-cache"> 
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
-<meta name="keywords" content="米饭联盟,MilFun,微信公众号,python编程,个人博客" />
-<meta name="description" content="米饭联盟,微信公众号成立于2016年，为粉丝免费提供大量资源福利，目前已有百万粉丝关注平台，共创辉煌！" />
+<meta name="keywords" content="米饭联盟,MilFun,米饭网,微信公众号,milfun.fun" />
+<meta name="description" content="米饭联盟,微信公众号成立于2016年2月，为粉丝免费提供大量资源福利，帮助您快速找到自己的未来,让技术变得更简单、更安全。目前已有百万粉丝关注平台，欢迎您加入，共创辉煌！" />
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
 <!-- mp.milfun.fun Baidu tongji analytics -->
 <script>
@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
 			<!--文章顶部信息-->
 			<div class="article-head">
 				<div class="bread">
-					当前位置：<a href="{APP_DOMAIN}">首页</a>
+					当前位置：<a href="<?php echo APP_DOMAIN; ?>">首页</a>
 					>><a href="<?php echo urm('search',['item'=>$blog['item']]); ?>"><?php echo $blog['caterogy']; ?></a> 
 					>> <a href=""><?php echo $blog['aname']; ?></a> 
 

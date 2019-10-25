@@ -18,7 +18,7 @@ return [
     'app_debug'              => true,
     // 应用Trace
     'app_trace'              => false,
-    // 应用模式状态
+    // 应用模式状态online  test
     'app_status'             => 'test',
     // 是否支持多模块
     'app_multi_module'       => true,

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\search.html";i:1571975059;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571904219;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571968310;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571968422;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571823071;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\search.html";i:1571990096;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571981346;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571968310;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571968422;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571823071;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
 <meta http-equiv="pragma" content="no-cache"> 
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
-<meta name="keywords" content="米饭联盟,MilFun,微信公众号,python编程,个人博客" />
-<meta name="description" content="米饭联盟,微信公众号成立于2016年，为粉丝免费提供大量资源福利，目前已有百万粉丝关注平台，共创辉煌！" />
+<meta name="keywords" content="米饭联盟,MilFun,米饭网,微信公众号,milfun.fun" />
+<meta name="description" content="米饭联盟,微信公众号成立于2016年2月，为粉丝免费提供大量资源福利，帮助您快速找到自己的未来,让技术变得更简单、更安全。目前已有百万粉丝关注平台，欢迎您加入，共创辉煌！" />
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
 <!-- mp.milfun.fun Baidu tongji analytics -->
 <script>
@@ -62,7 +62,7 @@ var _hmt = _hmt || [];
 				<a href=""><div class="swiper"></div></a>
 				
 				<!---->
-				<h2>Featured Video 分类视频</h2>
+				<h1>Featured Video 分类视频</h1>
 				<ul class="">
 					<?php if(is_array($search_blog) || $search_blog instanceof \think\Collection || $search_blog instanceof \think\Paginator): $i = 0; $__LIST__ = $search_blog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$bo): $mod = ($i % 2 );++$i;?>
 						<li class="card" >
