@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571967378;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571904219;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571968310;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571968422;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571823071;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\search.html";i:1571975059;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571904219;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571968310;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571968422;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571823071;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,9 +62,9 @@ var _hmt = _hmt || [];
 				<a href=""><div class="swiper"></div></a>
 				
 				<!---->
-				<h2>Featured Video 灵感视频</h2>
+				<h2>Featured Video 分类视频</h2>
 				<ul class="">
-					<?php if(is_array($hot_blog) || $hot_blog instanceof \think\Collection || $hot_blog instanceof \think\Paginator): $i = 0; $__LIST__ = $hot_blog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$bo): $mod = ($i % 2 );++$i;?>
+					<?php if(is_array($search_blog) || $search_blog instanceof \think\Collection || $search_blog instanceof \think\Paginator): $i = 0; $__LIST__ = $search_blog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$bo): $mod = ($i % 2 );++$i;?>
 						<li class="card" >
 							<a href="<?php echo urm('blog',['aid'=>$bo['aid']]); ?>" url=""><img class="card-img" src="<?php echo $bo['imgurl']; ?>"></a>
 							<a href=""><h3 class="card-tit"><?php echo $bo['aname']; ?></h3></a>
@@ -106,38 +106,7 @@ var _hmt = _hmt || [];
 	</div>
 	
 	
-	<!---->
-	<div class="docker list">
-		<div class="inner">
-			<div class="pick-list">
-				<h2>Editor's Pick 编辑推荐</h2>
-				<ul class="">
-					<?php if(is_array($sug_blog) || $sug_blog instanceof \think\Collection || $sug_blog instanceof \think\Paginator): $i = 0; $__LIST__ = $sug_blog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$su): $mod = ($i % 2 );++$i;?>
-						<li class="card">
-							<a href="<?php echo urm('blog',['aid'=>$su['aid']]); ?>"><img class="card-img" src="<?php echo $su['imgurl']; ?>"></a>
-							<a href=""><h3 class="card-tit"><?php echo $su['aname']; ?></h3></a>
-							<p class="card-tag">
-								<span class="tag">品牌</span>
-								<span class="tag">创意</span>
-								<span class="tag">灵感</span>
-							</p>
-							<p class="card-data"><span><?php echo $su['common']; ?>评论</span>
-								<span><?php echo $su['hot']; ?>人气</span>
-								<span><?php echo $su['likes']; ?>点赞</span></p>
-							<div class="bot-line"></div>
-							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
-								<div class="card-info">
-									<span><?php echo $su['author']; ?></span>
-									<span class="card-time">1 小时前</span>
-								</div>
-							</p>
-						</li>
-					<?php endforeach; endif; else: echo "" ;endif; ?>
-					</ul>
-			</div>
-			<p class="more"><a href="" class="link-more">更多精彩</a></p>
-		</div>
+	
 		
 		<!--广告-->
 		<div class="docker">

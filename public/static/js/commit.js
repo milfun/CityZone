@@ -2,12 +2,12 @@
 * @Author: MilFun
 * @Date:   2019-10-12 15:16:24
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-24 17:03:42
+* @Last Modified time: 2019-10-25 10:22:10
 */
 class commit {
 
-  constructor(list) {
-  	this.url= 'https://mp.milfun.fun/mark/addblog';
+  constructor(list,path) {
+  	this.url= path+'/mark/addblog';
   }
 
   getAll(){

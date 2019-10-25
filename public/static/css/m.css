@@ -2,7 +2,7 @@
 * @Author: MilFun
 * @Date:   2019-09-04 14:35:58
 * @Last Modified by:   milfun
-* @Last Modified time: 2019-10-23 09:44:07
+* @Last Modified time: 2019-10-25 11:50:02
 */
 @charset "UTF-8";
 html, body, div, h1, h2, h3, h4, h5, h6, p, span, img, input, textarea, ul, ol, li, hr,form {margin: 0;padding: 0;    -webkit-text-size-adjust: none;}
@@ -252,22 +252,22 @@ nav{
 
 .card{
     display: inline-block;
+    float: left;
     width: 200px;
     height: 300px;
     margin-top: 20px;
-    margin: 10px 5px;
+    margin-right: 18px;
     /*border: 1px solid #edeeee;*/
     border-radius: 10px;
     box-shadow: 0 1px 8px rgba(0,0,0,.06);
     
 }
+.card:nth-child(5n-4){
 
-.card:nth-child(4n-3){
-    margin-right: 15px;
     float: left;
 }
-.card:nth-child(4n){
-    margin-left: 15px;
+.card:nth-child(5n){
+    margin-right: 10px;
     float: right;
 }
 .card a{

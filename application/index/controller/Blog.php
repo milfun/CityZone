@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-10-21 14:32:38
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-23 14:09:20
+ * @Last Modified time: 2019-10-25 11:43:24
  */
 namespace app\index\controller;
 
@@ -29,8 +29,7 @@ class Blog extends Controller{
     public function index()
     {
         # code...
-        ini_set('display_errors','on');
-error_reporting(E_ALL);
+
         $request = request();
         $aid=$request->param('aid');
         $res = model('Blog')->getById($aid);
@@ -46,11 +45,11 @@ error_reporting(E_ALL);
     {
         # code...
         $hot = cache('hot_blog');
-        cache('hot_blog',null);
+        //cache('hot_blog',null);
         if (!$hot) {
             //echo "111111111";
             $hot =model('Blog')->getHotBlog();
-            cache('hot_blog',$hot);
+            cache('hot_blog',$hot,3600);
         }
         $this->assign('hot_blog',$hot);
         return $hot;
@@ -62,13 +61,30 @@ error_reporting(E_ALL);
     {
         # code...
         $sug = cache('sug_blog');
-        cache('sug_blog',null);
+        //cache('sug_blog',null);
         if (!$sug) {
             //echo "111111111";
             $sug =model('Blog')->getSugBlog();
-            cache('sug_blog',$sug);
+            cache('sug_blog',$sug,3600);
         }
         $this->assign('sug_blog',$sug);
         return $sug;
+    }
+
+    /**
+    *   文章页前往分类列表
+    */
+    public function getItemList($item)
+    {
+        # code...
+        $search = cache('search_blog_'.$item);
+        //cache('sug_blog',null);
+        if (!$search) {
+            $map['item'] = $item;
+            $search =model('Blog')->getItem($map);
+            cache('search_blog_',$search,3600);
+        }
+        $this->assign('search_blog',$search);
+        return $search;
     }
 }

@@ -12,5 +12,5 @@ function urm($mod,$string){
 	if ( is_array($string)){
 		$string = implode("&",$string);
 	}
-	return 'https://mp.milfun.fun/'.$mod.'/'.$string.'.html';
+	return APP_DOMAIN . '/'.$mod.'/'.$string.'.html';
 }

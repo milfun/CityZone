@@ -14,7 +14,18 @@
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/application/');
 
+/********* 线上线下切换 **********/
+// test
+define('APP_DOMAIN', 'http://milfun.com');
+// online
+//define('APP_DOMAIN', 'http://mp.milfun.fun');
+/*************************
+还要去config.php文件里改app_status	
+- test  	为本地测试    
+- online 	为线上部署
+*************************/
 
+/********* 线上线下切换 **********/
 
 // 定义静态资源目录
 define('IMG_PATH', __DIR__ . '/public/static/img/');

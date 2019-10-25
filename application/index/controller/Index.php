@@ -4,6 +4,7 @@ namespace app\index\controller;
 use think\Controller;
 use think\Request;
 use app\index\controller\Config;
+use app\index\controller\Blog;
 
 class Index extends Controller{
     public function _initialize()
@@ -20,9 +21,12 @@ class Index extends Controller{
         //dump(config('site_name'));
     }
 
+    /**
+    *   首页
+    */
     public function index(){
         
-        $blog = new \app\index\controller\Blog();
+        $blog = new Blog();
         $blog->getHotBlog();
         $blog->getSugBlog();
         //cache('hot_blog',null);
@@ -32,53 +36,29 @@ class Index extends Controller{
         
     }
 
-  
+    /**
+    *   不同分类文章搜索
+    */
+    public function search()
+    {
+        # code...
+        $item = input('item');
+        //dump($item);
+        $blog = new Blog();
+        $res = $blog->getItemList($item);
+        return $this->fetch('search');
 
+    }
+
+
+    /**
+    *   404导航
+    */
     public function _404()
     {
         # code...
         return $this->fetch('404');
     }
-    public function detail()
-    {
-        
-    }
-
-    /*
-    *   首页职位列表
-    */
-    public function markdown()
-    {
-        return $this->fetch('markdown');
-    }
-
-    /*
-    *   首页公司列表
-    */
-    public function companys($value='')
-    {
-        # code...
-        $com =model('Company'); 
-        $res = $com->getCompanyList();
-        //echo input('id');
-        //echo $res;
-        $this->assign($res);
-        return $this->fetch('company');
-    }
-
-    /*
-    *   首页公司列表
-    */
-    public function resumes($value='')
-    {
-        # code...
-        $com =model('Resume'); 
-        $res = $com->getResumeList();
-        //echo input('id');
-        //echo $res;
-        $this->assign($res);
-        return $this->fetch('resume');
-    }
-
+ 
 
 }

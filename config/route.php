@@ -19,7 +19,7 @@ Route::rule('topic/','index/topic/index','get',[],[]);
 Route::rule('discover/','index/discover/index','get',[],[]);
 Route::rule('event/','index/event/index','get',[],[]);
 Route::rule('mind/','index/mind/index','get',[],[]);
-Route::rule('resumes/','index/index/resumes','get',[],[]);
+Route::rule('search/:item','index/index/search','get',[],[]);
 /*
 return [
     '__pattern__' => [

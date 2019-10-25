@@ -19,7 +19,7 @@ return [
     // 应用Trace
     'app_trace'              => false,
     // 应用模式状态
-    'app_status'             => '',
+    'app_status'             => 'test',
     // 是否支持多模块
     'app_multi_module'       => true,
     // 入口自动绑定模块
@@ -142,9 +142,9 @@ return [
 
     // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '__IMG__' => 'http://mp.milfun.fun/public/static/img/',
-        '__CSS__' => 'http://mp.milfun.fun/public/static/css/',
-        '__JS__' => 'http://mp.milfun.fun/public/static/js/',
+        '__IMG__' => APP_DOMAIN . '/public/static/img/',
+        '__CSS__' =>  APP_DOMAIN . '/public/static/css/',
+        '__JS__' =>  APP_DOMAIN . '/public/static/js/',
     ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',

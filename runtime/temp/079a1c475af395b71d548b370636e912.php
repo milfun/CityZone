@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1571800498;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571713489;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571800585;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571800554;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571623909;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1571973206;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571904219;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571968310;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571968422;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571823071;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +7,21 @@
 <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
 <meta http-equiv="pragma" content="no-cache"> 
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
+<meta name="keywords" content="米饭联盟,MilFun,微信公众号,python编程,个人博客" />
+<meta name="description" content="米饭联盟,微信公众号成立于2016年，为粉丝免费提供大量资源福利，目前已有百万粉丝关注平台，共创辉煌！" />
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
-<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<!-- mp.milfun.fun Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?83d7d33e2195a88dceb457d2159fd69b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 
 	
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/sspai.css" />
@@ -29,7 +42,7 @@
 				</div>
 				<!---->
 				<div class="nav-logo">
-					<a href="http://mp.milfun.fun/"><img src="http://milfun.com/public/static/img/zone-logo.png"></a>
+					<a href="<?php echo APP_DOMAIN; ?>"><img src="http://milfun.com/public/static/img/zone-logo.png"></a>
 				</div>
 				<!---->
 				<div class="nav-info">
@@ -52,8 +65,8 @@
 			<!--文章顶部信息-->
 			<div class="article-head">
 				<div class="bread">
-					当前位置：<a href="http://mp.milfun.fun/">首页</a>
-					>><a href=""><?php echo $blog['caterogy']; ?></a> 
+					当前位置：<a href="{APP_DOMAIN}">首页</a>
+					>><a href="<?php echo urm('search',['item'=>$blog['item']]); ?>"><?php echo $blog['caterogy']; ?></a> 
 					>> <a href=""><?php echo $blog['aname']; ?></a> 
 
 					<span class="bread-time"><?php echo $blog['add_time']; ?></span>
@@ -274,10 +287,10 @@
 	<div class="docker footer">
 		<div class="inner">
 			<p class="foot-doc">
-				<a href="http://mp.milfun.fun/blog/f27c80b9cd63c452018a34611fd2bbb00b92413d.html" class="foot-link">关于我们</a>
+				<a href="<?php echo urm('blog',['aid'=>'f27c80b9cd63c452018a34611fd2bbb00b92413d']); ?>" class="foot-link">关于我们</a>
 				<a href="" class="foot-link">广告服务</a>
 				<a href="" class="foot-link">商户入驻</a>
-				<a href="http://mp.milfun.fun/blog/65dc2a6b67f0b42bd9c7ab9dd6cf71902bf3fc76.html" class="foot-link">免责申明</a>
+				<a href="<?php echo urm('blog',['aid'=>'65dc2a6b67f0b42bd9c7ab9dd6cf71902bf3fc76']); ?>" class="foot-link">免责申明</a>
 			</p>
 			<p  class="foot-info">
 				<span><?php echo config('copy_right'); ?></span>
@@ -291,10 +304,24 @@
 		
 <script type="text/javascript" src="http://milfun.com/public/static/js/milfun.js"></script>
 <script>
+	var domain = "<?php echo APP_DOMAIN; ?>"
 	var jsList = ["detail"]
-	var mi = new Milfun(jsList);
+	var mi = new Milfun(jsList,domain);
 </script>
 <!---->
-
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 </body>
 </html>

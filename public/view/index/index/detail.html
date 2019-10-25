@@ -15,8 +15,8 @@
 			<!--文章顶部信息-->
 			<div class="article-head">
 				<div class="bread">
-					当前位置：<a href="https://mp.milfun.fun/">首页</a>
-					>><a href="">{$blog.caterogy}</a> 
+					当前位置：<a href="{APP_DOMAIN}">首页</a>
+					>><a href="{:urm('search',['item'=>$blog.item])}">{$blog.caterogy}</a> 
 					>> <a href="">{$blog.aname}</a> 
 
 					<span class="bread-time">{$blog.add_time|}</span>
@@ -218,8 +218,8 @@
 {include file="/common/copy" /}	
 {load href="__JS__milfun.js" /}
 <script>
+	var domain = "{:APP_DOMAIN}"
 	var jsList = ["detail"]
-	var mi = new Milfun(jsList);
-	
+	var mi = new Milfun(jsList,domain);
 </script>
 {include file="/common/footer" /}

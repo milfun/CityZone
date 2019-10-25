@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-10-21 14:38:08
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-23 11:30:30
+ * @Last Modified time: 2019-10-25 11:38:06
  */
 namespace app\index\model;
 
@@ -42,16 +42,33 @@ class Blog extends Model
     	# code...
     	$map['aid'] = $aid;
         $res = $this->where($map)->find();
-        //dump($res);
         $res = json_decode(json_encode($res),true);
+        //dump($res);
         return $res;
     }
 
+    //根据条件获取分类下的所有文章内容,默认根据hot降序
+    public function getItem($map,$field='',$order='hot desc')
+    {
+        # code...
+        if ($field=='') {
+            $res = $this->where($map)->order($order)->select();
+        }else{
+            $res = $this->where($map)->field($field)->order($order)->select();
+        }
+        $res = json_decode(json_encode($res),true);
+        //dump($res);
+        return $res;
+    }
+
+    /**
+    *   创建新的blog
+    */
     public function addBlog($param='')
     {
         # code...
         $data['aid'] = sha1($param['acontent']);
-        if ($param['img']=='') {
+        if ($param['img']== '') {
             $data['imgurl'] = 'http://milfun.fun/s/blog/img/logo.jpg';
         }else{
             $data['imgurl'] = $param['img'];
@@ -73,12 +90,12 @@ class Blog extends Model
         return 'MilFun';
     }
 
-    //获取器
+    //获取Acontent正文进行html特俗字符转换
    	public function getAcontentAttr($value)
    	{
    		return htmlspecialchars_decode($value);
    	}
-    //获取器
+    //获取器AddTime创建时间戳格式转换
     public function getAddTimeAttr($value)
     {
         return date('Y-m-d h:i:s',$value);

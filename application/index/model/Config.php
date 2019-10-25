@@ -3,7 +3,7 @@
  * @Author: MilFun
  * @Date:   2019-09-25 10:06:13
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-21 09:40:17
+ * @Last Modified time: 2019-10-25 10:47:46
  */
 namespace app\index\model;
 
@@ -26,19 +26,6 @@ class Config extends Model
         return $config;
     }
 
-
-    public function test()
-    {
-    	# code...
-        $data = [
-            'username' => 'MilFun6',
-            'email' => 'milfun@qq.com',
-            'mobile' => '18558704247'
-        ];
-        dump($data) ;
-        $result = $this->where('username', 'MilFun5')->update($data);
-    	return 'MilFUn';
-    }
     /*
 		获取随机字符串
 	*/
