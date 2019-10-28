@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1572231425;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1572222398;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1572231387;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1572226942;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1572221898;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1572242909;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1572242672;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1572231387;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1572226942;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1572221898;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +9,8 @@
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
 <meta name="keywords" content="怪兽研习社,MilFun,研习社,微信公众号,怪兽" />
 <meta name="description" content="怪兽研习社,专注于为广大粉丝免费提供大量资源福利，帮助您快速找到自己的未来,让技术变得更简单、更安全。目前已有百万粉丝关注研习社，欢迎您加入，共创辉煌！" />
+<link rel="bookmark"  type="image/x-icon"  href="favicon.ico"/>
+<link rel="shortcut icon" href="http://milfun.com/public/static/img/favicon.ico">
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
 <!-- mp.milfun.fun Baidu tongji analytics -->
 <script>
@@ -80,9 +82,9 @@ var _hmt = _hmt || [];
 							<p class="card-tag">
 								<span class="tag"><?php echo $bo['tag']; ?></span>
 							</p>
-							<p class="card-data"><span><?php echo $bo['common']; ?></span>
-								<span><?php echo $bo['hot']; ?></span>
-								<span><?php echo $bo['likes']; ?></span></p>
+							<p class="card-data"><span title="<?php echo $bo['common']; ?>评论"><?php echo $bo['common']; ?></span>
+								<span title="<?php echo $bo['hot']; ?>人气"><?php echo $bo['hot']; ?></span>
+								<span title="<?php echo $bo['likes']; ?>喜欢"><?php echo $bo['likes']; ?></span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
 								<img src="http://milfun.com/public/static/img/logo.jpg" alt="<?php echo $bo['aname']; ?>" title="<?php echo $bo['aname']; ?>"> 
@@ -130,9 +132,9 @@ var _hmt = _hmt || [];
 								<span class="tag">创意</span>
 								<span class="tag">灵感</span>
 							</p>
-							<p class="card-data"><span ><?php echo $su['common']; ?></span>
-								<span><?php echo $su['hot']; ?></span>
-								<span><?php echo $su['likes']; ?></span></p>
+							<p class="card-data"><span  title="<?php echo $su['common']; ?>评论"><?php echo $su['common']; ?></span>
+								<span  title="<?php echo $su['hot']; ?>人气"><?php echo $su['hot']; ?></span>
+								<span title="<?php echo $su['likes']; ?>喜欢"><?php echo $su['likes']; ?></span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
 								<img src="http://milfun.com/public/static/img/logo.jpg"  alt="<?php echo $su['aname']; ?>" title="<?php echo $su['aname']; ?>"> 

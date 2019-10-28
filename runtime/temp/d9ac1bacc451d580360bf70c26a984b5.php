@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\markdown.html";i:1572230908;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1572222398;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1572226793;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\markdown.html";i:1572230920;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1572242657;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1572231387;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +9,8 @@
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
 <meta name="keywords" content="怪兽研习社,MilFun,研习社,微信公众号,怪兽" />
 <meta name="description" content="怪兽研习社,专注于为广大粉丝免费提供大量资源福利，帮助您快速找到自己的未来,让技术变得更简单、更安全。目前已有百万粉丝关注研习社，欢迎您加入，共创辉煌！" />
+<link rel="bookmark"  type="image/x-icon"  href="favicon.ico"/>
+<link rel="shortcut icon" href="http://milfun.com/public/static/img/favicon.ico">
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
 <!-- mp.milfun.fun Baidu tongji analytics -->
 <script>
@@ -26,6 +28,7 @@ var _hmt = _hmt || [];
 	
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/sspai.css" />
 <title>怪兽研习社 - MarkDown在线编辑器</title>
+
 </head>
 <body>
 <div class="docker header">
@@ -34,7 +37,7 @@ var _hmt = _hmt || [];
 			<nav >
 				<!---->
 				<div class="nav-logo">
-					<a href="<?php echo APP_DOMAIN; ?>"><img src="http://milfun.com/public/static/img/zone-logo.png"></a>
+					<a href="<?php echo APP_DOMAIN; ?>"><img src="http://milfun.com/public/static/img/zone-logo.png"  title="怪兽研习社"  alt="怪兽研习社"></a>
 				</div>
 				<!---->
 				<div class="nav-item">
