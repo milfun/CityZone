@@ -76,11 +76,11 @@ article p {
 }
 article a {
 	padding: 0 10px;
-	color: #20dcc2;
+	color: #a88e00;
 	text-decoration: none;
 }
 article a:hover {
-	color: #f55852;
+	color: #FFE971;
 	text-decoration: underline;
 }
 article a:focus {
@@ -144,7 +144,7 @@ code {
  p>code {
 	padding: 0 10px;
 	margin: 0 10px;
-	color: #FFF;
+	color: #fff;
 	background-color: #1f1f1f;
 	font-size: .95em;
 	border-radius: 3px;
@@ -278,7 +278,7 @@ article a:target {
 		display:block;
 		float: right;
 		padding: 30px;
-		width: 100%;
+		width: 80%;
 		text-align: left;
 		margin: 0 auto;
 		box-shadow: 0 1px 8px rgba(0,0,0,.06);

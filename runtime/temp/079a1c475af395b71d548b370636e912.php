@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1571990265;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571981346;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571968310;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571968422;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571823071;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\detail.html";i:1572231327;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1572222398;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1572230927;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1572226942;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1572221898;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
 <meta http-equiv="pragma" content="no-cache"> 
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
-<meta name="keywords" content="米饭联盟,MilFun,米饭网,微信公众号,milfun.fun" />
-<meta name="description" content="米饭联盟,微信公众号成立于2016年2月，为粉丝免费提供大量资源福利，帮助您快速找到自己的未来,让技术变得更简单、更安全。目前已有百万粉丝关注平台，欢迎您加入，共创辉煌！" />
+<meta name="keywords" content="怪兽研习社,MilFun,研习社,微信公众号,怪兽" />
+<meta name="description" content="怪兽研习社,专注于为广大粉丝免费提供大量资源福利，帮助您快速找到自己的未来,让技术变得更简单、更安全。目前已有百万粉丝关注研习社，欢迎您加入，共创辉煌！" />
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
 <!-- mp.milfun.fun Baidu tongji analytics -->
 <script>
@@ -33,16 +33,16 @@ var _hmt = _hmt || [];
 			<!---->
 			<nav >
 				<!---->
+				<div class="nav-logo">
+					<a href="<?php echo APP_DOMAIN; ?>"><img src="http://milfun.com/public/static/img/zone-logo.png"></a>
+				</div>
+				<!---->
 				<div class="nav-item">
 					<a href="" class="nav-link">发现</a>
 					<a href="" class="nav-link">有聊</a>
 					<a href="" class="nav-link">活动</a>
 					<a href="" class="nav-link">未知领域</a>
 					<a href="" class="nav-link">Zone学院</a>
-				</div>
-				<!---->
-				<div class="nav-logo">
-					<a href="<?php echo APP_DOMAIN; ?>"><img src="http://milfun.com/public/static/img/zone-logo.png"></a>
 				</div>
 				<!---->
 				<div class="nav-info">
@@ -53,15 +53,19 @@ var _hmt = _hmt || [];
 		</nav>
 		</div>
 		
+	</div>
+	<div class="docker header2">
+		<div class="inner">
+			
+			<span class="h2-span">最新消息：士大夫的就能免费v接口的沙漠覅开发你们看v</span>
+		</div>
 	</div>	
 	<!---->
 	<div class="docker article">
 		<div class="inner">
 			
 			<!--保留块-->
-			<div class="keep">
-				
-			</div>
+			<a href=""><div class="swiper s1"></div></a>
 			<!--文章顶部信息-->
 			<div class="article-head">
 				<div class="bread">
@@ -119,7 +123,7 @@ var _hmt = _hmt || [];
 			</div>
 			<!-- 作者信息 -->
 			<div class="article-info">
-				<img src="http://milfun.com/public/static/img/logo.jpg">
+				<img src="http://milfun.com/public/static/img/logo.jpg"  alt="<?php echo $blog['author']; ?>" title="<?php echo $blog['author']; ?>">
 				<div class="article-auth">
 					<p class="auth-name"><?php echo $blog['author']; ?><i class="vip-icon"></i></p>
 					<p class="auth-desc">福建 | 程序猿/最爱黑科技</p>
@@ -142,120 +146,32 @@ var _hmt = _hmt || [];
 			<div class="docker list">
 				<div class="inner">
 					<div class="">
-						<h2>Editor's Pick 编辑推荐</h2>
+						<h2>MilFun Pick 编辑推荐</h2>
 						<div class="clear"></div>
 						<ul class="">
-							<li class="card">
-									<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							<?php if(is_array($comblog) || $comblog instanceof \think\Collection || $comblog instanceof \think\Paginator): $i = 0; $__LIST__ = $comblog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$co): $mod = ($i % 2 );++$i;?>
+								<li class="card" >
+									<a href="<?php echo urm('blog',['aid'=>$co['aid']]); ?>" url=""><img class="card-img" src="<?php echo $co['imgurl']; ?>"  alt="<?php echo $co['aname']; ?>"  title="<?php echo $co['aname']; ?>"></a>
+									<a href=""><h3 class="card-tit"><?php echo $co['aname']; ?></h3></a>
+									<!---->
 									<p class="card-tag">
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
+										<span class="tag"><?php echo $co['tag']; ?></span>
 									</p>
-									
-									<p class="card-data"><span>0评论</span>
-										<span>3收藏</span>
-										<span>3点赞</span></p>
+									<p class="card-data"><span><?php echo $co['common']; ?></span>
+										<span><?php echo $co['hot']; ?></span>
+										<span><?php echo $co['likes']; ?></span></p>
 									<div class="bot-line"></div>
 									<p class="card-auth">
-										<img src="http://milfun.com/public/static/img/logo.jpg" > 
+										<img src="http://milfun.com/public/static/img/logo.jpg"  alt="<?php echo $co['aname']; ?>"  title="<?php echo $co['aname']; ?>"> 
 										<div class="card-info">
-											<span>MilFun</span>
+											<span><?php echo $co['author']; ?></span>
 											<span class="card-time">1 小时前</span>
 										</div>
 									</p>
 								</li>
-								<li class="card">
-									<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-									<p class="card-tag">
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-									</p>
-									
-									<p class="card-data"><span>0评论</span>
-										<span>3收藏</span>
-										<span>3点赞</span></p>
-									<div class="bot-line"></div>
-									<p class="card-auth">
-										<img src="http://milfun.com/public/static/img/logo.jpg" > 
-										<div class="card-info">
-											<span>MilFun</span>
-											<span class="card-time">1 小时前</span>
-										</div>
-									</p>
-								</li>
-								<li class="card">
-									<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-									<p class="card-tag">
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-									</p>
-									<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-									<p class="card-data"><span>0评论</span>
-										<span>3收藏</span>
-										<span>3点赞</span></p>
-									<div class="bot-line"></div>
-									<p class="card-auth">
-										<img src="http://milfun.com/public/static/img/logo.jpg" > 
-										<div class="card-info">
-											<span>MilFun</span>
-											<span class="card-time">1 小时前</span>
-										</div>
-									</p>
-								</li>
-								<li class="card">
-									<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-									<p class="card-tag">
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-									</p>
-									<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-									<p class="card-data"><span>0评论</span>
-										<span>3收藏</span>
-										<span>3点赞</span></p>
-									<div class="bot-line"></div>
-									<p class="card-auth">
-										<img src="http://milfun.com/public/static/img/logo.jpg" > 
-										<div class="card-info">
-											<span>MilFun</span>
-											<span class="card-time">1 小时前</span>
-										</div>
-									</p>
-								</li>
-								<li class="card">
-									<a href=""><img class="card-img" src="http://milfun.com/public/static/img/pro-2.png"></a>
-									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-									<p class="card-tag">
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-									</p>
-									<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-									<p class="card-data"><span>0评论</span>
-										<span>3收藏</span>
-										<span>3点赞</span></p>
-									<div class="bot-line"></div>
-									<p class="card-auth">
-										<img src="http://milfun.com/public/static/img/logo.jpg" > 
-										<div class="card-info">
-											<span>MilFun</span>
-											<span class="card-time">1 小时前</span>
-										</div>
-									</p>
-								</li>
+							<?php endforeach; endif; else: echo "" ;endif; ?>
+								
+								
 
 							</ul>
 					</div>
@@ -284,7 +200,7 @@ var _hmt = _hmt || [];
 	</div>
 
 	<!---->
-	<div class="docker footer">
+	<div class="docker header2 ft2">
 		<div class="inner">
 			<p class="foot-doc">
 				<a href="<?php echo urm('blog',['aid'=>'f27c80b9cd63c452018a34611fd2bbb00b92413d']); ?>" class="foot-link">关于我们</a>
@@ -292,6 +208,11 @@ var _hmt = _hmt || [];
 				<a href="" class="foot-link">商户入驻</a>
 				<a href="<?php echo urm('blog',['aid'=>'65dc2a6b67f0b42bd9c7ab9dd6cf71902bf3fc76']); ?>" class="foot-link">免责申明</a>
 			</p>
+		</div>
+	</div>
+	<div class="docker footer">
+		<div class="inner">
+			
 			<p  class="foot-info">
 				<span><?php echo config('copy_right'); ?></span>
 				
@@ -308,7 +229,7 @@ var _hmt = _hmt || [];
 	var jsList = ["detail"]
 	var mi = new Milfun(jsList,domain);
 </script>
-<!---->
+<!--
 <script>
 (function(){
     var bp = document.createElement('script');
@@ -322,6 +243,6 @@ var _hmt = _hmt || [];
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(bp, s);
 })();
-</script>
+</script>-->
 </body>
 </html>

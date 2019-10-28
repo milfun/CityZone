@@ -4,7 +4,7 @@
  * @Author: MilFun
  * @Date:   2019-10-21 14:38:08
  * @Last Modified by:   milfun
- * @Last Modified time: 2019-10-25 11:38:06
+ * @Last Modified time: 2019-10-28 10:34:46
  */
 namespace app\index\model;
 
@@ -21,7 +21,7 @@ class Blog extends Model
     public function getHotBlog()
     {   
         $map['type'] = 1;
-        $res = $this->where($map)->order('hot desc')->limit(5)->select();
+        $res = $this->where($map)->order('hot desc')->limit(4)->select();
         $res = json_decode(json_encode($res),true);
         //dump($res);
         return $res;
@@ -30,7 +30,17 @@ class Blog extends Model
     public function getSugBlog()
     {   
         $map['type'] = 1;
-        $res = $this->where($map)->order('add_time desc')->limit(10)->select();
+        $res = $this->where($map)->order('add_time desc')->limit(8)->select();
+        $res = json_decode(json_encode($res),true);
+        //dump($res);
+        return $res;
+    }
+
+    //首页推荐8篇博客
+    public function getComBlog()
+    {   
+        $map['type'] = 1;
+        $res = $this->where($map)->order('likes desc')->limit(8)->select();
         $res = json_decode(json_encode($res),true);
         //dump($res);
         return $res;

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1571967378;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1571981346;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1571968310;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1571968422;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1571823071;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\MilFun\Apache24\htdocs\CityZone\config/../public/view/index\index\index.html";i:1572231425;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\header.html";i:1572222398;s:68:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\nav.html";i:1572231387;s:69:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\copy.html";i:1572226942;s:71:"D:\MilFun\Apache24\htdocs\CityZone\public\view\index\common\footer.html";i:1572221898;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
 <meta http-equiv="pragma" content="no-cache"> 
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
-<meta name="keywords" content="米饭联盟,MilFun,米饭网,微信公众号,milfun.fun" />
-<meta name="description" content="米饭联盟,微信公众号成立于2016年2月，为粉丝免费提供大量资源福利，帮助您快速找到自己的未来,让技术变得更简单、更安全。目前已有百万粉丝关注平台，欢迎您加入，共创辉煌！" />
+<meta name="keywords" content="怪兽研习社,MilFun,研习社,微信公众号,怪兽" />
+<meta name="description" content="怪兽研习社,专注于为广大粉丝免费提供大量资源福利，帮助您快速找到自己的未来,让技术变得更简单、更安全。目前已有百万粉丝关注研习社，欢迎您加入，共创辉煌！" />
 <link rel="stylesheet" type="text/css" href="http://milfun.com/public/static/css/m.css" />
 <!-- mp.milfun.fun Baidu tongji analytics -->
 <script>
@@ -24,7 +24,7 @@ var _hmt = _hmt || [];
 <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 
 	
-<title>米饭联盟-最适合你的知识分享博客</title>
+<title>怪兽研习社-最适合你的知识分享博客</title>
 </head>
 <body>
 <div class="docker header">
@@ -32,16 +32,16 @@ var _hmt = _hmt || [];
 			<!---->
 			<nav >
 				<!---->
+				<div class="nav-logo">
+					<a href="<?php echo APP_DOMAIN; ?>"><img src="http://milfun.com/public/static/img/zone-logo.png"  title="怪兽研习社"  alt="怪兽研习社"></a>
+				</div>
+				<!---->
 				<div class="nav-item">
 					<a href="" class="nav-link">发现</a>
 					<a href="" class="nav-link">有聊</a>
 					<a href="" class="nav-link">活动</a>
 					<a href="" class="nav-link">未知领域</a>
 					<a href="" class="nav-link">Zone学院</a>
-				</div>
-				<!---->
-				<div class="nav-logo">
-					<a href="<?php echo APP_DOMAIN; ?>"><img src="http://milfun.com/public/static/img/zone-logo.png"></a>
 				</div>
 				<!---->
 				<div class="nav-info">
@@ -52,31 +52,40 @@ var _hmt = _hmt || [];
 		</nav>
 		</div>
 		
+	</div>
+	<div class="docker header2">
+		<div class="inner">
+			
+			<span class="h2-span">最新消息：士大夫的就能免费v接口的沙漠覅开发你们看v</span>
+		</div>
 	</div>	
 
 	<!---->
 	<div class="docker main">
 		<div class="inner">
+
 			<div class="content">
 				<!---->
-				<a href=""><div class="swiper"></div></a>
+
+				<a href=""  title="怪兽研习社" ><div class="swiper s1"></div></a>
 				
 				<!---->
-				<h2>Featured Video 灵感视频</h2>
+				<h2>Featured Hot 精彩热门</h2>
 				<ul class="">
 					<?php if(is_array($hot_blog) || $hot_blog instanceof \think\Collection || $hot_blog instanceof \think\Paginator): $i = 0; $__LIST__ = $hot_blog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$bo): $mod = ($i % 2 );++$i;?>
 						<li class="card" >
-							<a href="<?php echo urm('blog',['aid'=>$bo['aid']]); ?>" url=""><img class="card-img" src="<?php echo $bo['imgurl']; ?>"></a>
+							<a href="<?php echo urm('blog',['aid'=>$bo['aid']]); ?>" url=""><img class="card-img" src="<?php echo $bo['imgurl']; ?>"  alt="<?php echo $bo['aname']; ?>"  title="<?php echo $bo['aname']; ?>"></a>
 							<a href=""><h3 class="card-tit"><?php echo $bo['aname']; ?></h3></a>
+							<!---->
 							<p class="card-tag">
 								<span class="tag"><?php echo $bo['tag']; ?></span>
 							</p>
-							<p class="card-data"><span><?php echo $bo['common']; ?>评论</span>
-								<span><?php echo $bo['hot']; ?>收藏</span>
-								<span><?php echo $bo['likes']; ?>点赞</span></p>
+							<p class="card-data"><span><?php echo $bo['common']; ?></span>
+								<span><?php echo $bo['hot']; ?></span>
+								<span><?php echo $bo['likes']; ?></span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg" alt="<?php echo $bo['aname']; ?>" title="<?php echo $bo['aname']; ?>"> 
 								<div class="card-info">
 									<span>MilFun</span>
 									<span class="card-time">1 小时前</span>
@@ -114,19 +123,19 @@ var _hmt = _hmt || [];
 				<ul class="">
 					<?php if(is_array($sug_blog) || $sug_blog instanceof \think\Collection || $sug_blog instanceof \think\Paginator): $i = 0; $__LIST__ = $sug_blog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$su): $mod = ($i % 2 );++$i;?>
 						<li class="card">
-							<a href="<?php echo urm('blog',['aid'=>$su['aid']]); ?>"><img class="card-img" src="<?php echo $su['imgurl']; ?>"></a>
+							<a href="<?php echo urm('blog',['aid'=>$su['aid']]); ?>"><img class="card-img" src="<?php echo $su['imgurl']; ?>"  alt="<?php echo $su['aname']; ?>" title="<?php echo $su['aname']; ?>"></a>
 							<a href=""><h3 class="card-tit"><?php echo $su['aname']; ?></h3></a>
 							<p class="card-tag">
 								<span class="tag">品牌</span>
 								<span class="tag">创意</span>
 								<span class="tag">灵感</span>
 							</p>
-							<p class="card-data"><span><?php echo $su['common']; ?>评论</span>
-								<span><?php echo $su['hot']; ?>人气</span>
-								<span><?php echo $su['likes']; ?>点赞</span></p>
+							<p class="card-data"><span ><?php echo $su['common']; ?></span>
+								<span><?php echo $su['hot']; ?></span>
+								<span><?php echo $su['likes']; ?></span></p>
 							<div class="bot-line"></div>
 							<p class="card-auth">
-								<img src="http://milfun.com/public/static/img/logo.jpg" > 
+								<img src="http://milfun.com/public/static/img/logo.jpg"  alt="<?php echo $su['aname']; ?>" title="<?php echo $su['aname']; ?>"> 
 								<div class="card-info">
 									<span><?php echo $su['author']; ?></span>
 									<span class="card-time">1 小时前</span>
@@ -143,9 +152,7 @@ var _hmt = _hmt || [];
 		<div class="docker">
 			<div class="inner">
 				<!--保留块-->
-				<div class="keep">
-				
-				</div>
+				<a href=""  title="怪兽研习社" ><div class="swiper s2"></div></a>
 			</div>
 		</div>
 		<!--广告 END -->
@@ -186,7 +193,7 @@ var _hmt = _hmt || [];
 	</div>
 
 	<!---->
-	<div class="docker footer">
+	<div class="docker header2 ft2">
 		<div class="inner">
 			<p class="foot-doc">
 				<a href="<?php echo urm('blog',['aid'=>'f27c80b9cd63c452018a34611fd2bbb00b92413d']); ?>" class="foot-link">关于我们</a>
@@ -194,6 +201,11 @@ var _hmt = _hmt || [];
 				<a href="" class="foot-link">商户入驻</a>
 				<a href="<?php echo urm('blog',['aid'=>'65dc2a6b67f0b42bd9c7ab9dd6cf71902bf3fc76']); ?>" class="foot-link">免责申明</a>
 			</p>
+		</div>
+	</div>
+	<div class="docker footer">
+		<div class="inner">
+			
 			<p  class="foot-info">
 				<span><?php echo config('copy_right'); ?></span>
 				
@@ -204,7 +216,15 @@ var _hmt = _hmt || [];
 	</div>
 	
 		
-<!---->
+
+<script>
+	$(".sb-phone").hover(function(){
+    $(".code").css("display","block");
+},function(){
+    $(".code").css("display","none");
+});
+</script>
+<!--
 <script>
 (function(){
     var bp = document.createElement('script');
@@ -218,6 +238,6 @@ var _hmt = _hmt || [];
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(bp, s);
 })();
-</script>
+</script>-->
 </body>
 </html>

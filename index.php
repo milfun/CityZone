@@ -18,7 +18,7 @@ define('APP_PATH', __DIR__ . '/application/');
 // test
 define('APP_DOMAIN', 'http://milfun.com');
 // online
-//define('APP_DOMAIN', 'http://mp.milfun.fun');
+//define('APP_DOMAIN', 'https://mp.milfun.fun');
 /*************************
 还要去config.php文件里改app_status	
 - test  	为本地测试    

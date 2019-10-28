@@ -1,17 +1,13 @@
 {include file="/common/header" /}
 {load href="__CSS__sspai.css" /}
 <title>米饭联盟-{$blog.aname}</title>
-</head>
-<body>
 {include file="/common/nav" /}	
 	<!---->
 	<div class="docker article">
 		<div class="inner">
 			
 			<!--保留块-->
-			<div class="keep">
-				
-			</div>
+			<a href=""  title="怪兽研习社" ><div class="swiper s1"></div></a>
 			<!--文章顶部信息-->
 			<div class="article-head">
 				<div class="bread">
@@ -69,7 +65,7 @@
 			</div>
 			<!-- 作者信息 -->
 			<div class="article-info">
-				<img src="__IMG__logo.jpg">
+				<img src="__IMG__logo.jpg"  alt="{$blog.author}" title="{$blog.author}">
 				<div class="article-auth">
 					<p class="auth-name">{$blog.author}<i class="vip-icon"></i></p>
 					<p class="auth-desc">福建 | 程序猿/最爱黑科技</p>
@@ -92,120 +88,32 @@
 			<div class="docker list">
 				<div class="inner">
 					<div class="">
-						<h2>Editor's Pick 编辑推荐</h2>
+						<h2>MilFun Pick 编辑推荐</h2>
 						<div class="clear"></div>
 						<ul class="">
-							<li class="card">
-									<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
-									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
+							{volist name="comblog" id="co"}
+								<li class="card" >
+									<a href="{:urm('blog',['aid'=>$co.aid])}" url=""><img class="card-img" src="{$co.imgurl}"  alt="{$co.aname}"  title="{$co.aname}"></a>
+									<a href=""><h3 class="card-tit">{$co.aname}</h3></a>
+									<!---->
 									<p class="card-tag">
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
+										<span class="tag">{$co.tag}</span>
 									</p>
-									
-									<p class="card-data"><span>0评论</span>
-										<span>3收藏</span>
-										<span>3点赞</span></p>
+									<p class="card-data"><span>{$co.common}</span>
+										<span>{$co.hot}</span>
+										<span>{$co.likes}</span></p>
 									<div class="bot-line"></div>
 									<p class="card-auth">
-										<img src="__IMG__logo.jpg" > 
+										<img src="__IMG__logo.jpg"  alt="{$co.aname}"  title="{$co.aname}"> 
 										<div class="card-info">
-											<span>MilFun</span>
+											<span>{$co.author}</span>
 											<span class="card-time">1 小时前</span>
 										</div>
 									</p>
 								</li>
-								<li class="card">
-									<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
-									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-									<p class="card-tag">
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-									</p>
-									
-									<p class="card-data"><span>0评论</span>
-										<span>3收藏</span>
-										<span>3点赞</span></p>
-									<div class="bot-line"></div>
-									<p class="card-auth">
-										<img src="__IMG__logo.jpg" > 
-										<div class="card-info">
-											<span>MilFun</span>
-											<span class="card-time">1 小时前</span>
-										</div>
-									</p>
-								</li>
-								<li class="card">
-									<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
-									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-									<p class="card-tag">
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-									</p>
-									<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-									<p class="card-data"><span>0评论</span>
-										<span>3收藏</span>
-										<span>3点赞</span></p>
-									<div class="bot-line"></div>
-									<p class="card-auth">
-										<img src="__IMG__logo.jpg" > 
-										<div class="card-info">
-											<span>MilFun</span>
-											<span class="card-time">1 小时前</span>
-										</div>
-									</p>
-								</li>
-								<li class="card">
-									<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
-									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-									<p class="card-tag">
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-									</p>
-									<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-									<p class="card-data"><span>0评论</span>
-										<span>3收藏</span>
-										<span>3点赞</span></p>
-									<div class="bot-line"></div>
-									<p class="card-auth">
-										<img src="__IMG__logo.jpg" > 
-										<div class="card-info">
-											<span>MilFun</span>
-											<span class="card-time">1 小时前</span>
-										</div>
-									</p>
-								</li>
-								<li class="card">
-									<a href=""><img class="card-img" src="__IMG__pro-2.png"></a>
-									<a href=""><h3 class="card-tit">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h3></a>
-									<p class="card-tag">
-										<span class="tag">品牌</span>
-										<span class="tag">创意</span>
-										<span class="tag">灵感</span>
-									</p>
-									<p class="card-desc">以国际设计语言塑造品牌领导力</p>
-									<p class="card-data"><span>0评论</span>
-										<span>3收藏</span>
-										<span>3点赞</span></p>
-									<div class="bot-line"></div>
-									<p class="card-auth">
-										<img src="__IMG__logo.jpg" > 
-										<div class="card-info">
-											<span>MilFun</span>
-											<span class="card-time">1 小时前</span>
-										</div>
-									</p>
-								</li>
+							{/volist}
+								
+								
 
 							</ul>
 					</div>
